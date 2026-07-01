@@ -1,6 +1,15 @@
 -- ┏┏ ┏━┃┏━ ┃ ┃┃  ┏━┛┏━┛
 -- ┃┃┃┃ ┃┃ ┃┃ ┃┃  ┏━┛━━┃
 -- ┛┛┛━━┛━━ ━━┛━━┛━━┛━━┛
+require("modules.env")
+require("modules.monitors")
+require("modules.autostart")
+require("modules.misc")
+require("modules.input")
+require("modules.plugins")
+require("animations.anim") -- 4, 7, 10, 11 and 12, 14, 15,
+require("modules.keybinds")
+require("modules.autostart")
 
 hl.config({
 	-- ┏━┛┏━┛┏━ ┏━┛┏━┃┏━┃┃
