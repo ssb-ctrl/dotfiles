@@ -1,0 +1,95 @@
+# 1:-
+animations {
+    enabled = yes
+
+    # Default curves, see https://wiki.hypr.land/Configuring/Animations/#curves
+    #        NAME,           X0,   Y0,   X1,   Y1
+    bezier = easeOutQuint,   0.23, 1,    0.32, 1
+    bezier = easeInOutCubic, 0.65, 0.05, 0.36, 1
+    bezier = linear,         0,    0,    1,    1
+    bezier = almostLinear,   0.5,  0.5,  0.75, 1
+    bezier = quick,          0.15, 0,    0.1,  1
+    bezier = emphasizedDecel,0.05, 0.7,  0.1,  1
+    bezier = emphasizedAccel, 0.3, 0, 0.8, 1.1
+
+    # Default animations, see https://wiki.hypr.land/Configuring/Animations/
+    #           NAME,          		ONOFF, SPEED, CURVE,           [STYLE]
+    animation = border,        		1,     5.39,  easeOutQuint, 
+    animation = borderangle,      0,     9,     emphasizedDecel
+    animation = windowsIn,     		1,     3,     emphasizedDecel, 
+    animation = windowsOut,    		1,     3,     emphasizedAccel,    
+    animation = windowsMove,   		1,     2,     easeOutQuint,    #dragging , moving, resizing
+    animation = layers,        		1,     3,     easeOutQuint,    
+    animation = fade,          		1,     3.81,  easeOutQuint 
+    animation = fadeIn,        		1,     3.81,  easeOutQuint 
+    animation = fadeOut,       		1,     3.81,  easeOutQuint 
+    animation = workspaces,    		1,     5,     emphasizedDecel, slidefade 60%
+    animation = specialWorkspace, 1,     4,     quick, slidefadevert 70% 
+		animation = zoomFactor,       1,     4.5,   easeOutQuint 
+}
+
+# 2:-
+# animations {
+#     enabled = true
+#
+#     # Animation curves
+#     bezier = specialWorkSwitch, 0.05, 0.7, 0.1, 1
+#     bezier = emphasizedAccel, 0.3, 0, 0.8, 0.15
+#     bezier = emphasizedDecel, 0.05, 0.7, 0.1, 1
+#     bezier = standard, 0.2, 0, 0, 1
+#     bezier = easeOutQuint,   0.23, 1,    0.32, 1
+#     bezier = quick,          0.15, 0,    0.1,  1
+#
+#     # Animation configs
+#     animation = fade, 1, 4, standard
+#     animation = fadeDim, 1, 4, standard
+#
+#     animation = layersIn, 1, 3, emphasizedDecel, slide
+#     animation = layersOut, 1, 2, emphasizedAccel, slide
+#     animation = fadeLayers, 1, 4, standard
+#
+#     animation = windowsIn, 1, 3, emphasizedDecel
+#     animation = windowsOut, 1, 3, emphasizedAccel
+#     animation = windowsMove,  1, 2, standard,  #dragging , moving, resizing
+#     # animation = windowsMove,  1, 3, easeOutQuint,  #dragging , moving, resizing
+#
+#     animation = workspaces, 1, 4, easeOutQuint, slidefade
+#     animation = specialWorkspace, 1, 2, easeOutQuint, slidefadevert 
+#
+# 		animation = zoomFactor, 1, 6, emphasizedDecel
+#
+# 		#PLUGINS
+# 		# animation = hyprfocusIn, 1, 1.5, standard
+# 		# animation = hyprfocusOut, 1, 1, quick
+# }
+
+# 3:- essentially 2 but with bounce effects
+# animations {
+#     enabled = true
+#
+#     # Animation curves
+#     bezier = specialWorkSwitch, 0.05, 0.7, 0.1, 1.1
+#     bezier = emphasizedAccel, 0.3, 0, 0.8, 1.1
+#     bezier = emphasizedDecel, 0.05, 0.7, 0.1, 1.1
+#     bezier = standard, 0.2, 0, 0, 1.1
+#     bezier = easeOutQuint,   0.23, 1,    0.32, 1.1
+#     bezier = quick,          0.15, 0,    0.1,  1.1
+#
+#     # Animation configs
+#     animation = fade, 1, 4, standard
+#     animation = fadeDim, 1, 4, standard
+#
+#     animation = layersIn, 1, 3, emphasizedDecel, slide
+#     animation = layersOut, 1, 2, emphasizedAccel, slide
+#     animation = fadeLayers, 1, 4, standard
+#
+#     animation = windowsIn, 1, 3, emphasizedDecel
+#     animation = windowsOut, 1, 3, emphasizedAccel
+#     animation = windowsMove,  1, 2, standard,  #dragging , moving, resizing
+#     # animation = windowsMove,  1, 3, easeOutQuint,  #dragging , moving, resizing
+#
+#     animation = workspaces, 1, 4, easeOutQuint, slidefade
+#     animation = specialWorkspace, 1, 4, specialWorkSwitch, slidefadevert 
+#
+# 		animation = zoomFactor, 1, 6, emphasizedDecel
+# }

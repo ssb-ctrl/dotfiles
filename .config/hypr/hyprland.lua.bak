@@ -1,0 +1,88 @@
+-- ┏┏ ┏━┃┏━ ┃ ┃┃  ┏━┛┏━┛
+-- ┃┃┃┃ ┃┃ ┃┃ ┃┃  ┏━┛━━┃
+-- ┛┛┛━━┛━━ ━━┛━━┛━━┛━━┛
+
+hl.config({
+	-- ┏━┛┏━┛┏━ ┏━┛┏━┃┏━┃┃
+	-- ┃ ┃┏━┛┃ ┃┏━┛┏┏┛┏━┃┃
+	-- ━━┛━━┛┛ ┛━━┛┛ ┛┛ ┛━━┛
+	general = {
+		border_size = 2,
+		gaps_in = 4,
+		gaps_out = 8,
+		float_gaps = -1,
+		col = {
+			active_border = 0xff82aaff,
+			inactive_border = 0xff182323,
+		},
+		layout = "dwindle",
+	},
+
+	-- ┏━ ┏━┛┏━┛┏━┃┏━┃┏━┃━┏┛┛┏━┃┏━ ┏━┛
+	-- ┃ ┃┏━┛┃  ┃ ┃┏┏┛┏━┃ ┃ ┃┃ ┃┃ ┃━━┃
+	-- ━━ ━━┛━━┛━━┛┛ ┛┛ ┛ ┛ ┛━━┛┛ ┛━━┛
+	decoration = {
+		active_opacity = 1,
+		inactive_opacity = 0.95,
+		fullscreen_opacity = 1,
+		-- rounding = 9,
+		rounding_power = 5,
+		dim_inactive = 1,
+		dim_strength = 0.15,
+		-- screen_shader = ,
+		blur = {
+			enabled = false,
+			ignore_opacity = false,
+			size = 6,
+			passes = 3,
+			noise = 0.0117,
+			brightness = 0.8172,
+			vibrancy = 0.1696,
+			popups = false,
+			new_optimizations = true,
+			xray = true, -- lighter on gpu as it considers only the wallpaper for reference
+		},
+		shadow = {
+			enabled = false,
+			range = 10,
+			render_power = 8,
+		},
+		glow = {
+			enabled = false,
+			range = 10,
+			render_power = 4,
+		},
+	},
+
+	-- ┏━┃ ┃ ┃┛┏━┃┃ ┃┏━┛
+	-- ┃ ┃ ┃ ┃┃┏┏┛┏┛ ━━┃
+	-- ━━━┛━━┛┛┛ ┛┛ ┛━━┛
+	quirks = {
+		prefer_hdr = 1, -- 0 - off, 1 - always, 2 - gamescope only
+	},
+
+	-- ┏━┛┏━┛┏━┃┏━┛┃ ┃┏━┛━┏┛┏━┛┏┏
+	-- ┏━┛┃  ┃ ┃━━┃━┏┛━━┃ ┃ ┏━┛┃┃┃
+	-- ━━┛━━┛━━┛━━┛ ┛ ━━┛ ┛ ━━┛┛┛┛
+	ecosystem = {
+		no_donation_nag = true,
+		enforce_permissions = true,
+	},
+
+	-- ┃ ┃━┃ ━┃
+	--  ┛  ┃  ┃
+	-- ┛ ┛━━┛━━┛
+	xwayland = {
+		enabled = true,
+		force_zero_scaling = true, -- forces a scale of 1 on xwayland windows on scaled displays
+	},
+
+	-- ┏━ ┏━┛┏━ ┃ ┃┏━┛
+	-- ┃ ┃┏━┛┏━┃┃ ┃┃ ┃
+	-- ━━ ━━┛━━ ━━┛━━┛
+	debug = {
+		suppress_errors = false,
+		error_limit = 5,
+		error_position = 1, -- top - 0, bottom - 1
+	},
+})
