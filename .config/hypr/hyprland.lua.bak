@@ -3,7 +3,7 @@
 -- ┛┛┛━━┛━━ ━━┛━━┛━━┛━━┛
 require("modules.env")
 require("modules.monitors")
-require("modules.autostart")
+require("modules.rules")
 require("modules.misc")
 require("modules.input")
 require("modules.plugins")
