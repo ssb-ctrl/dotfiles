@@ -12,6 +12,7 @@ vim.keymap.set("n", "<S-q>", "<cmd>q<CR>", { desc = "Quit" })
 
 -- Saving buffers
 vim.keymap.set("n", "we", "<cmd>w<CR>", { desc = "Save existing buffer" })
+vim.keymap.set("n", "wq", "<cmd>wq<CR>", { desc = "Save and  quit buffer" })
 vim.keymap.set("n", "wn", function()
 	vim.ui.input({
 		prompt = "Save as: ",
