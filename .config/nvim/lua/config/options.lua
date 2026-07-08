@@ -69,6 +69,7 @@ vim.opt.wildmode = "longest:full,full"
 
 -- default win beahviour
 vim.opt.winborder = "single"
+-- vim.opt.winborder = "none"
 
 -- line breaks and wrap
 vim.opt.linebreak = true -- Wrap lines at clean word boundaries instead of mid-character

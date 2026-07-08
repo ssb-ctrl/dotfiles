@@ -31,6 +31,7 @@ return {
 			},
 		},
 		"neovim/nvim-lspconfig",
+		"saghen/blink.cmp",
 	},
 	config = function(_, opts)
 		require("mason-lspconfig").setup(opts)
@@ -51,9 +52,6 @@ return {
 		local Capabilities = require("blink.cmp").get_lsp_capabilities()
 
 		-- Add lang servers config if you want to merge some custom settings with nvim-lspconfig default settings
-		vim.lsp.config("*", {
-			capabilities = Capabilities,
-		})
 		vim.lsp.config("lua_ls", {
 			settings = {
 				Lua = {
@@ -66,6 +64,9 @@ return {
 					},
 				},
 			},
+		})
+		vim.lsp.config("*", {
+			capabilities = Capabilities,
 		})
 
 		-- Enable language servers manually installed via mason
