@@ -33,7 +33,7 @@ vim.opt.cindent = false
 vim.opt.autoindent = true
 
 -- LSP diagnostics on left side column
--- vim.opt.signcolumn = "auto"  -- using Snacks prettier statuscolumn
+-- vim.opt.signcolumn = "auto" -- using Snacks prettier statuscolumn
 
 -- Incremental substitute preview using %s
 vim.opt.inccommand = "nosplit" -- split,nosplit and ""
@@ -44,7 +44,7 @@ vim.opt.smartcase = true -- matches all but for Uppercase matches only Uppercase
 
 -- Folding of lines, use zf to manually fold , zc to close and zo to open folds
 vim.opt.foldenable = true -- global folding options, set to false to disable it globally
-vim.opt.foldlevel = 20
+vim.opt.foldlevel = 99
 vim.opt.foldmethod = "expr" -- indent expr manual
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()" -- for expr method
 

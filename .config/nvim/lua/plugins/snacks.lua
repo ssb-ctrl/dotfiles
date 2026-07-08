@@ -40,19 +40,19 @@ return {
 		dashboard = {
 			enabled = true,
 			-- sections = {
-			--   { section = "header", indent = 12 },
-			--   { section = "keys", gap = 1, padding = 2, indent = 11 },
-			--   { section = "startup", indent = 10 },
-			--   {
-			--     section = "terminal",
-			--     -- cmd = "ascii-image-converter ~/Pictures/icons/pokemon.jpeg -C -c -d 45,25",
-			--     cmd = "ascii-image-converter ~/Pictures/icons/4.png -Cc -d 52,20; sleep infinity",
-			--     -- cmd = "ascii-image-converter ~/Pictures/icons/3.png -Cc -d 52,19",
-			--     -- cmd = "ascii-image-converter ~/Pictures/icons/2.png -Cc -d 52,19",
-			--     height = 25,
-			--     indent = 5,
-			--     pane = 2,
-			--   },
+			-- 	{ section = "header", indent = 12 },
+			-- 	{ section = "keys", gap = 1, padding = 2, indent = 11 },
+			-- 	{ section = "startup", indent = 10 },
+			-- 	{
+			-- 		section = "terminal",
+			-- 		-- cmd = "ascii-image-converter ~/Pictures/icons/pokemon.jpeg -C -c -d 45,25",
+			-- 		-- cmd = "ascii-image-converter ~/Pictures/icons/4.png -Cc -d 53,19; sleep infinity",
+			-- 		cmd = "ascii-image-converter ~/Pictures/icons/3.png -Cc -d 53,19; sleep infinity",
+			-- 		-- cmd = "ascii-image-converter ~/Pictures/icons/2.png -Cc -d 52,19",
+			-- 		height = 25,
+			-- 		indent = 5,
+			-- 		pane = 2,
+			-- 	},
 			-- },
 			sections = {
 				{ section = "header", indent = 12 },
