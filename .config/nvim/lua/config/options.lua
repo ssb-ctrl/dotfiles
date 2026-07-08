@@ -73,7 +73,7 @@ vim.opt.winborder = "single"
 -- line breaks and wrap
 vim.opt.linebreak = true -- Wrap lines at clean word boundaries instead of mid-character
 vim.opt.showbreak = " ⤷ "
-vim.opt.wrap = true -- true disrupts cellular animation
+vim.opt.wrap = false -- true disrupts cellular animation
 
 -- Tab behaviour
 vim.opt.tabstop = 2

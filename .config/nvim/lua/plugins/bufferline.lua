@@ -19,7 +19,7 @@ return {
 					style = "underline", -- underline, none
 				},
 				max_name_length = 14,
-				tab_size = 22,
+				tab_size = 20,
 				diagnostics = "nvim_lsp", -- false
 				diagnostics_indicator = function(count, level) --diagnostics_dict, context
 					local icon = level:match("error") and " " or " "

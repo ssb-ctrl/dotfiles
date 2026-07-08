@@ -1,0 +1,50 @@
+# vim:fileencoding=utf-8:foldmethod=marker
+# startup_session startup.conf
+
+# BEGIN_KITTY_THEME
+# Tokyo Night Moon
+include current-theme.conf
+# END_KITTY_THEME
+
+# Distro packages do not do update checking
+update_check_interval 0 
+
+# General
+window_padding_width 10
+confirm_os_window_close 0
+enable_audio_bell no
+mouse_hide_wait 1
+
+#Perfomance
+sync_to_monitor yes
+linux_display_server wayland
+
+# Shell integration
+shell_integration no-cursor 
+
+# BEGIN_KITTY_FONTS
+font_family      family='CaskaydiaCove Nerd Font' style=Light
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+disable_ligatures always
+font_size 9
+# END_KITTY_FONTS
+
+# CURSOR
+cursor #FFB722
+cursor_blink_interval 0
+cursor_shape block
+cursor_trail 3
+# cursor_trail_color none
+cursor_trail_decay 0.07 0.22
+cursor_trail_start_threshold 0
+
+#scrollback
+scrollback_lines 2000
+scrollbar never 
+
+#TAB-BAR
+tab_bar_edge bottom
+tab_bar_style powerline
+tab_title_max_length 20
