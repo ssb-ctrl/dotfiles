@@ -129,7 +129,7 @@ return {
 				Snacks.terminal(nil, {
 					win = {
 						position = "bottom", -- float, position
-						height = 0.48,
+						height = 0.4,
 						-- width = 0.6,
 						border = "single", --double rounded
 					},

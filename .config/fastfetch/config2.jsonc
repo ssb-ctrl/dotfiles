@@ -3,8 +3,8 @@
   //
   "logo": {
     "type": "command-raw",
-    // "source": "ascii-image-converter -Cc ~/Pictures/icons/4.png -d 46,14",
-    "source": "ascii-image-converter -Cc ~/Pictures/icons/3.png -d 46,14",
+    "source": "ascii-image-converter -Cc ~/Pictures/icons/4.png -d 46,14",
+    // "source": "ascii-image-converter -Cc ~/Pictures/icons/3.png -d 46,14",
     // "source": "ascii-image-converter -Cc ~/Pictures/icons/2.png -d 45,15"
     "padding": {
       "right": 2
