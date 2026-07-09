@@ -40,11 +40,11 @@ return {
 			-- Flash.nvim
 			hl.FlashLabel = { bold = true, bg = "#f958af", fg = "#1d2238" }
 			-- Blink.cmp
-			hl.BlinkCmpDocSeparator = { fg = "#ffc777" }
+			hl.BlinkCmpDocSeparator = { fg = "#c3e88d" }
 			hl.BlinkCmpDocBorder = { fg = "#0eb2dc" }
 			hl.BlinkCmpDoc = { fg = "#c0caf5", bg = "#1e2031" }
 			hl.BlinkCmpSignatureHelp = { fg = "#c0caf5", bg = "#1e2031" }
-			hl.BlinkCmpSignatureHelpBorder = { fg = "#9ecb6a", bg = "#1e2031" }
+			hl.BlinkCmpSignatureHelpBorder = { fg = "#79c7f4", bg = "#1e2031" }
 			hl.BlinkCmpMenu = { fg = "#c0caf5", bg = "#1e2031" }
 			hl.BlinkCmpMenuBorder = { fg = "#82aaff", bg = "#1e2031" }
 			hl.BlinkCmpScrollBarThumb = { bg = "#727996" }

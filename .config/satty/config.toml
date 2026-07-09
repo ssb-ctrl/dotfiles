@@ -1,0 +1,9 @@
+[general]
+# early-exit = true  ,causing trouble at the moment for copy as the image would not get copied
+# early-exit-save-as = true , removed ig
+output-filename = "/home/satya/Pictures/Screenshots/image_%d-%m-%Y_%I:%M:%S%p.png"
+floating-hack = true
+
+[font]
+family = "CaskaydiaCove Nerd Font"
+style = "Regular"
