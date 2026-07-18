@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+PROFILE=$(powerprofilesctl get)
+
+if [[ "$PROFILE" == "performance" ]]; then
+    powerprofilesctl set balanced
+    notify-send "Balanced" "Balanced mode ON" -a powerprofile -h string:x-canonical-private-synchronous:powerprofile -u low -i ~/Pictures/icons/balanced1.png
+elif [[ "$PROFILE" == "balanced" ]]; then
+    powerprofilesctl set power-saver
+    notify-send Power-saver "Power saving mode ON" -a powerprofile -h string:x-canonical-private-synchronous:powerprofile -u low -i ~/Pictures/icons/power_saving.png
+else
+    powerprofilesctl set performance
+    notify-send "Performance" "Performance mode ON" -a powerprofile -h string:x-canonical-private-synchronous:powerprofile -u low -i ~/Pictures/icons/performance1.png
+fi

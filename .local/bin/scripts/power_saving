@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+powerprofilesctl set power-saver
+sleep 0.3
+notify-send Power-saver "Power saving mode ON" -a powerprofile -h string:x-canonical-private-synchronous:powerprofile -u low -i ~/Pictures/icons/power_saving.png
+

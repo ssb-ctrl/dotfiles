@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+
+IDLE=$(vmstat | tail -1| awk '{print$15}')
+CPU_USAGE=$((100 - "$IDLE"))
+
+STATE_FILE="/tmp/cpu_state"
+
+if [ "$CPU_USAGE" -lt "60" ]; then
+	rm "$STATE_FILE"
+	exit 0
+fi
+
+LAST=0
+if [ -f "$STATE_FILE" ]; then
+	LAST=$(cat "$STATE_FILE")
+fi
+
+if [ "$CPU_USAGE" -ge "60" ] && [ "$CPU_USAGE" -le "75" ] && [ "$LAST" -ne "1" ]; then
+	notify-send "CPU" "$CPU_USAGE% cpu used" -u normal -i ~/Pictures/icons/cpu.png
+	echo 1 > "$STATE_FILE"
+	exit 0
+fi
+
+if [ "$CPU_USAGE" -gt "75" ] && [ "$LAST" -ne "2" ]; then
+	notify-send "CPU" "$CPU_USAGE% cpu used" -u critical -i ~/Pictures/icons/cpu.png
+	echo 2 > "$STATE_FILE"
+	exit 0
+fi

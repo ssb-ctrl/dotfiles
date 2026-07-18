@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+
+status=$(playerctl -p spotify status 2>/dev/null)
+MAX=28
+ARTIST=$(playerctl -p spotify metadata xesam:artist)
+TITLE=$(playerctl -p spotify metadata xesam:title)
+
+if [[ "$status" == "Playing" ]]; then
+  SONG=$(playerctl metadata -p spotify --format "{{title}} - {{artist}}")
+    if [[ ${#SONG} -gt $MAX ]]; then
+        SONG="${SONG:0:$MAX}..."
+    fi
+    echo "{ \"text\": \"󰓇 $SONG\", \
+          \"tooltip\": \"󰓇 Spotify currently playing\n󰝚 Title 󰁔 $TITLE\n Artist 󰁔 $ARTIST\", \
+          \"class\": \"playing\" }"
+
+elif [[ "$status" == "Paused" ]]; then
+    echo '{"text": " ", "tooltip": " Spotify currently paused", "class": "paused"}' 
+
+else
+    echo '{"text": " ⠄⠄⠄", "tooltip": " Spotify instance not running", "class": "idle"}' 
+fi

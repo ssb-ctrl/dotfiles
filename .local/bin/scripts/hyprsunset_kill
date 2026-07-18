@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+if pidof hyprsunset >/dev/null; then
+	killall hyprsunset &
+	sleep 0.3
+	notify-send Hyprsunset "Night light switched OFF" -a Hyprsunset -u low -i ~/Pictures/icons/sun-horizon-1.png  -h string:x-canonical-private-synchronous:Hyprsunset
+
+else
+	sleep 0.3
+	notify-send Hyprsunset "Night light already OFF" -a Hyprsunset -u low -i ~/Pictures/icons/sun-horizon-1.png -h string:x-canonical-private-synchronous:Hyprsunset
+fi

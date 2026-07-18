@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+powerprofilesctl set performance
+sleep 0.3
+notify-send "Performance" "Performance mode ON" -a powerprofile -h string:x-canonical-private-synchronous:powerprofile -u low -i ~/Pictures/icons/performance1.png
+

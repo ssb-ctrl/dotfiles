@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+
+if pidof waybar >/dev/null; then 
+	killall waybar 	
+	waybar & 
+	sleep 0.3s
+	notify-send Waybar "config reloaded" -a Waybar -u low -i ~/Pictures/icons/waybar2.png -h string:x-canonical-private-synchronous:waybar_rel
+else
+	waybar & 
+	notify-send Waybar "Program was started" -a Waybar -u low -i ~/Pictures/icons/waybar2.png -h string:x-canonical-private-synchronous:waybar_rel
+fi

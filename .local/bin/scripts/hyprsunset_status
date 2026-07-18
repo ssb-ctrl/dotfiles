@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+if pidof hyprsunset >/dev/null; then
+    #echo "{\"text\":\󱩌"\",\"tooltip\":\"Night Light Enabled\",\"class\":\"on\"}"
+    echo "{\"text\":\"󰖔\",\"tooltip\":\"Night Light Enabled\",\"class\":\"on\"}"
+else
+    echo "{\"text\":\"󰖔\",\"tooltip\":\"Night Light Enabled\",\"class\":\"off\"}"
+    # echo "{\"text\":\"󱩍\",\"tooltip\":\"Night Light Enabled\",\"class\":\"off\"}"
+fi
+
+
+# 

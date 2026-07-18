@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+ANIMATION=$(hyprctl getoption animations:enabled -j | jq '(.int*1)')
+
+if [ "$ANIMATION" -eq "1" ]; then
+  hyprctl -q keyword animations:enabled 0
+	sleep 0.3
+	notify-send "Hyprland" "Animations OFF" -a animation_toggle -u low -i ~/Pictures/icons/hyprland.png -h string:x-canonical-private-synchronous:animation_toggle
+else
+  hyprctl -q keyword animations:enabled 1
+	sleep 0.3
+	notify-send "Hyprland" "Animations ON" -a animation_toggle -u low -i ~/Pictures/icons/hyprland.png -h string:x-canonical-private-synchronous:animation_toggle
+fi
+
+
+	 
+
+
+
+

@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+if pidof hypridle >/dev/null; then
+	killall hypridle
+	sleep 0.3s
+	notify-send Hypridle "Service killed successfully" -a Hypridle -u low -i ~/Pictures/icons/hyprland.png -h string:x-canonical-private-synchronous:Hypridle
+else
+	notify-send Hypridle "Service already killed" -a Hypridle -u low -i ~/Pictures/icons/hyprland.png -h string:x-canonical-private-synchronous:Hypridle
+fi

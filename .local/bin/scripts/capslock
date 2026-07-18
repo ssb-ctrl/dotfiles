@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+FILE="/sys/class/leds/input3::capslock/brightness" 
+DBUS="unix:path=/run/user/$(id -u satya)/bus" 
+
+CURR=$(cat "$FILE")
+
+if [ "$CURR" -ne "0" ]; then
+	notify-send "Keyboard" "CapsLock ON" -a capslock -h string:x-canonical-private-synchronous:capslock -u low -i ~/Pictures/icons/caps_on.png
+	exit 0
+fi
+
+if [ "$CURR" -ne "1" ]; then
+	notify-send "Keyboard" "CapsLock OFF" -a capslock -h string:x-canonical-private-synchronous:capslock -u low -i ~/Pictures/icons/caps_off.png
+	exit 0
+fi

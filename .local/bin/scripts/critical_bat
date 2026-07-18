@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+
+BAT_STATUS=$(acpi | awk '{print$3}' | awk -F ',' '{print$1}') 
+BAT_LEVEL=$(acpi -b | awk  '{print$4}' | tr , 1 | awk -F '%' '{print$1}')
+
+STATE_FILE="/tmp/bat_level_state"
+
+if [ "$BAT_STATUS" != "Discharging" ]; then
+    rm "$STATE_FILE"
+    exit 0
+fi
+
+PREV=0
+if [ -f "$STATE_FILE" ]; then  
+	  PREV=$(cat "$STATE_FILE")
+fi
+
+if [ "$BAT_LEVEL" -le "20" ] && [ "$BAT_LEVEL" -gt "17" ] && [ "$PREV" -ne "20" ]; then
+    notify-send "Low Battery" ""$BAT_LEVEL"% Battery remaining" -u normal -i ~/Pictures/icons/bat_20.png
+    echo 20 > "$STATE_FILE"
+    exit 0
+fi
+
+if [ "$BAT_LEVEL" -le "5" ] && [ "$PREV" -ne "5" ]; then
+    echo 5 > "$STATE_FILE"
+    notify-send "Critical Battery" ""$BAT_LEVEL"% Battery remaining" -u critical -i ~/Pictures/icons/bat_5.png
+    exit 0
+fi

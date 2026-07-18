@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+if pidof hyprsunset >/dev/null; then
+	notify-send Hyprsunset "Night light already ON"  -a Hyprsunset -u low -i ~/Pictures/icons/sun-horizon.png  -h string:x-canonical-private-synchronous:Hyprsunset
+else
+	hyprsunset -t 4500 &
+	notify-send Hyprsunset "Night light switched ON" -a Hyprsunset -u low -i ~/Pictures/icons/sun-horizon.png   -h string:x-canonical-private-synchronous:Hyprsunset
+fi
+

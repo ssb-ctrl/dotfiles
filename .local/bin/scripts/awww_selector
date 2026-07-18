@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+
+WALLDIR="$HOME/Pictures/Wallpapers/Tokyonight"
+CACHE="$HOME/.cache/wallthumbs"
+
+mkdir -p "$CACHE"
+
+ENTRIES=""
+
+for img in "$WALLDIR"/*; do
+    [ -f "$img" ] || continue
+
+    base=$(basename "$img")
+    thumb="$CACHE/$base.png"
+
+    # Create thumbnail if not existing
+    if [ ! -f "$thumb" ]; then
+        magick "$img" -thumbnail 128x128 "$thumb"
+    fi
+
+    ENTRIES="${ENTRIES}${base}\0icon\x1f${thumb}\n"
+done
+
+SELECTED=$(printf "$ENTRIES" | fuzzel --dmenu --line-height 30 --width 80 --hide-prompt)
+
+[ -z "$SELECTED" ] && exit
+
+awww img "$WALLDIR/$SELECTED" --transition-type random --transition-duration 1

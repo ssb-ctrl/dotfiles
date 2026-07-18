@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+
+BAT_STATUS=$(acpi | grep -c "Discharging") #return 1 if discharging
+BAT_LEVEL=$(acpi -b | awk  '{print$4}' | tr , 1 | awk -F '%' '{print$1}')
+
+DBUS="unix:path=/run/user/$(id -u satya)/bus"
+STATE_FILE="/tmp/charging_status"
+
+if [ "$BAT_STATUS" -eq "1" ]; then
+    rm "$STATE_FILE"
+    exit 0
+fi
+
+PREV=0
+if [ -f "$STATE_FILE" ]; then  
+	  PREV=$(cat "$STATE_FILE")
+fi
+
+if [ "$BAT_LEVEL" -ge "59" ] && [ "$BAT_LEVEL" -le "62" ] && [ "$PREV" -ne "1" ]; then
+    notify-send "Battery" ""$BAT_LEVEL"% Battery charged" -u normal -i ~/Pictures/icons/charge_60.png
+    echo 1 > "$STATE_FILE"
+    exit 0
+fi
+
+if [ "$BAT_LEVEL" -gt "92" ] && [ "$PREV" -ne "2" ]; then
+    echo 2 > "$STATE_FILE"
+    notify-send "Full Charged" ""$BAT_LEVEL"% Battery charged" -u normal -i ~/Pictures/icons/full_charge.png
+    exit 0
+fi
+

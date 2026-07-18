@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+powerprofilesctl set balanced
+sleep 0.3
+notify-send "Balanced" "Balanced mode ON" -a powerprofile -h string:x-canonical-private-synchronous:powerprofile -u low -i ~/Pictures/icons/balanced1.png

@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+FILE="/sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode" #/sys if virtual fs i.e., kernel writes those every time after system starts
+DBUS="unix:path=/run/user/$(id -u satya)/bus"
+
+CUR_VAL=$(cat "$FILE")
+
+if [ "$CUR_VAL" -eq 1 ]; then
+  echo 0 >"$FILE"
+  sudo -u satya DBUS_SESSION_BUS_ADDRESS="$DBUS" \
+    notify-send Battery "Conservation Mode OFF" -a conservation -h string:x-canonical-private-synchronous:conservation_mode -u normal -i /home/satya/Pictures/icons/conservation_off.png
+else
+  echo 1 >"$FILE"
+  sudo -u satya DBUS_SESSION_BUS_ADDRESS="$DBUS" \
+    notify-send Battery "Conservation Mode ON" -a conservation -h string:x-canonical-private-synchronous:conservation_mode -u normal -i /home/satya/Pictures/icons/conservation_on.png
+fi

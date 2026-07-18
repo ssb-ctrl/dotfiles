@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+MUTED=$(wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -o MUTED)
+
+if [[ "$MUTED" == "MUTED" ]]; then
+  echo "{\"text\":\"󰍭\", \"tooltip\":\"Default Source/Input 󰁔 muted\", \"class\":\"muted\"}"
+else
+  echo "{\"text\":\"󰍬\", \"tooltip\":\"Default Source/Input 󰁔 active\", \"class\":\"active\"}"
+fi
