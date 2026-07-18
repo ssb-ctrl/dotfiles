@@ -216,7 +216,7 @@ button {
   background-color: @blue;
   color: @fg-alt;
   font-weight: 700;
-  padding: 0px 13px;
+  /* padding: 0px 13px; */
 }
 
 #workspaces button.urgent {
