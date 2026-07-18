@@ -1,0 +1,33 @@
+{
+  "include": "~/.config/waybar/style.css",
+  "layer": "top",
+  "position": "top",
+  "mode": "dock",
+  "spacing": 0,
+  "margin-top": 6,
+  "margin-bottom": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "custom/fuzzel",
+    "battery",
+    "custom/nightlight",
+    "clock",
+    "custom/powerprofile",
+    "custom/spotify"
+  ],
+  "modules-center": [
+    "hyprland/workspaces",
+    "custom/gsr"
+  ],
+  "modules-right": [
+    "backlight",
+    "group/audio",
+    "bluetooth",
+    "group/hardware",
+    "network",
+    "custom/power"
+  ],
+  "include": "~/.config/waybar/modules.jsonc"
+}

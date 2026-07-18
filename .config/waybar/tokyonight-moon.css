@@ -1,0 +1,81 @@
+/* Core */
+@define-color bg-alt #1e2030;
+@define-color bg #212337;
+@define-color bg-dark #191a2a;
+@define-color bg-darker #151621;
+
+@define-color fg #c0caf5;
+@define-color fg-alt #1d2238;
+@define-color fg-alt-light #7081d0;
+@define-color fg-dark #828bb8;
+@define-color fg-gutter #3b4261;
+
+/* Accents */
+@define-color blue #82aaff;
+@define-color blue-bluetooth#0385FC;
+@define-color blue-light #7AA2F7;
+@define-color blue-soft #6d8cff;
+@define-color blue-deep #3d59a1;
+@define-color blue-muted #4c566a;
+@define-color blue-arch #00ADFF;
+
+@define-color cyan #86e1fc;
+@define-color cyan-light #b5f4ff;
+@define-color cyan-soft #6fd8f3;
+@define-color aqua #7dcfff;
+@define-color aqua-deep #2ac3de;
+@define-color aqua-night #1e81a8;
+
+@define-color teal #4fd6be;
+@define-color green #2ECC71;
+@define-color green-spotify #00df6d;
+@define-color green-power #3baf84;
+@define-color green-soft #a7f3d0;
+@define-color green-mint #9DCD6A;
+@define-color green-mint-alt #7fba00;
+@define-color green-deep #41a6b5;
+@define-color teal-light #67e8f9;
+@define-color teal-deep #0eb2dc;
+@define-color teal-deep-soft #202F43;
+@define-color emerald #73daca;
+
+@define-color purple #c099ff;
+@define-color violet #7856FF;
+@define-color lavender #BD91F0;
+@define-color purple-deep #654ea3;
+@define-color purple-light #d2b3ff;
+@define-color purple-soft #9d7cd8;
+@define-color lavender-deep #7a88cf;
+@define-color plum #bb9af7;
+
+@define-color magenta #fca7ea;
+@define-color pink #f91880;
+@define-color pink-light #ffadff;
+@define-color magenta-deep #983c9d;
+@define-color magenta-soft #d48ae8;
+@define-color pink-soft #ffbde6;
+@define-color pink-deep #a74385;
+
+@define-color red #f53c3c;
+@define-color red-alt #dd0031;
+@define-color red-dark #c53b53;
+@define-color red-light #ffa4a4;
+@define-color red-soft #ff8b8b;
+@define-color red-hot #f7768e;
+@define-color red-deep #b52c41;
+
+@define-color yellow #ffc777;
+@define-color gold #ffd696;
+@define-color yellow-soft #ffe9a7;
+
+@define-color orange #ff966c;
+@define-color peach #ffc0a0;
+@define-color orange-deep #c56639;
+@define-color peach-deep #eeb493;
+
+@define-color frost #a4ffff;
+@define-color mint #9effd6;
+@define-color mint-green #afebb5;
+@define-color mint-deep #59c0a3;
+
+@define-color brown #E8813D;

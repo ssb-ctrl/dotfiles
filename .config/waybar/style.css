@@ -1,0 +1,411 @@
+@import "/home/satya/.config/waybar/tokyonight-moon.css";
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spotify-glow {
+  0% {
+    color: @green-spotify;
+    text-shadow:
+      0 0 17px rgba(29, 185, 84, 0.5),
+      0 0 24px rgba(29, 185, 84, 0.3),
+      0 0 48px rgba(29, 185, 84, 0.15);
+  }
+
+  25% {
+    color: @green-mint-alt;
+    text-shadow:
+      0 0 12px rgba(29, 185, 84, 0.9),
+      0 0 24px rgba(29, 185, 84, 0.6),
+      0 0 36px rgba(29, 185, 84, 0.35),
+      0 0 48px rgba(29, 185, 84, 0.2);
+  }
+
+  50% {
+    color: @yellow;
+    text-shadow:
+      0 0 12px rgba(29, 185, 84, 0.9),
+      0 0 24px rgba(29, 185, 84, 0.6),
+      0 0 36px rgba(29, 185, 84, 0.35),
+      0 0 48px rgba(29, 185, 84, 0.2);
+  }
+
+  75% {
+    color: @pink;
+    text-shadow:
+      0 0 12px rgba(29, 185, 84, 0.9),
+      0 0 24px rgba(29, 185, 84, 0.6),
+      0 0 36px rgba(29, 185, 84, 0.35),
+      0 0 48px rgba(29, 185, 84, 0.2);
+  }
+
+  100% {
+    color: @green-mint;
+    text-shadow:
+      0 0 8px rgba(29, 185, 84, 0.6),
+      0 0 16px rgba(29, 185, 84, 0.4),
+      0 0 24px rgba(29, 185, 84, 0.25),
+      0 0 36px rgba(29, 185, 84, 0.12);
+  }
+}
+
+* {
+  font-family: CaskaydiaCove Nerd Font Propo, JetBrainsMonoNL Nerd Font, sans-serif;
+  font-size: 12px;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+
+tooltip {
+  font-weight: 400;
+  background-color: @bg;
+  border: 2px solid @blue;
+  border-radius: 0px;
+  color: @fg;
+}
+
+#custom-fuzzel {
+  border-radius: 4px;
+  background-color: @bg;
+  color: @blue-arch;
+  margin-right: 3px;
+  margin-left: 4px;
+  padding-left: 8px;
+  padding-right: 7px;
+}
+
+#battery {
+  border-radius: 4px;
+  background-color: @bg;
+  color: @fg-dark;
+  margin-right: 3px;
+  padding-right: 8px;
+  padding-left: 7px;
+}
+
+#battery.discharging {
+  color: @fg
+}
+
+#battery.full {
+  color: @fg;
+}
+
+#battery.warning {
+  color: #ffd223;
+}
+
+#battery.critical {
+  color: #ff7770;
+}
+
+#battery.charging {
+  color: @green-power;
+  padding-right: 6px;
+}
+
+#custom-nightlight {
+  border-radius: 4px;
+  background-color: @bg;
+  margin-right: 3px;
+}
+
+#custom-nightlight.on {
+  color: @orange;
+  padding-left: 8px;
+  padding-right: 7px;
+}
+
+#custom-nightlight.off {
+  color: @fg-dark;
+  padding-left: 8px;
+  padding-right: 7px;
+}
+
+#clock {
+  background-color: @bg;
+  color: @fg;
+  border-radius: 4px;
+  margin-right: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+#custom-powerprofile {
+  border-radius: 4px;
+  background-color: @bg;
+  margin-right: 3px;
+}
+
+#custom-powerprofile.performance {
+  color: @yellow;
+  padding-right: 9px;
+  padding-left: 9px;
+  padding-top: 1px;
+}
+
+#custom-powerprofile.balanced {
+  color: @fg;
+  /* color: @aqua-deep; */
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+#custom-powerprofile.powersaver {
+  color: @green;
+  padding-right: 7px;
+  padding-left: 6px;
+}
+
+#custom-spotify {
+  background-color: @bg;
+  border-radius: 4px;
+  margin-right: 3px;
+  color: @green-mint;
+}
+
+#custom-spotify.playing {
+  padding-left: 6px;
+  padding-right: 6px;
+  animation-timing-function: ease-in-out;
+  animation: spotify-glow 2s infinite alternate;
+}
+
+#custom-spotify.paused {
+  padding-left: 7px;
+  padding-right: 8px;
+}
+
+#custom-spotify.idle {
+  padding-left: 7px;
+  padding-right: 5px;
+}
+
+#workspaces {
+  background-color: @bg;
+  border-radius: 4px;
+  margin-right: 8px;
+  padding: 2px 1px;
+}
+
+button {
+  color: @fg;
+  border-radius: 4px;
+  margin: 0px 1px;
+  padding: 0px 9px;
+}
+
+#workspaces button:not(.empty) {
+  background-color: alpha(@fg-dark, 0.3);
+}
+
+#workspaces button.active {
+  background-color: @blue;
+  color: @fg-alt;
+  font-weight: 700;
+  padding: 0px 13px;
+}
+
+#workspaces button.urgent {
+  background-color: @red-hot;
+  font-weight: 700;
+  color: @fg-alt;
+}
+
+#custom-gsr {
+  margin: 0px 6px;
+  color: #e43d34;
+}
+
+#custom-gsr.recording {
+  animation: blink 1.8s infinite ease-in-out;
+}
+
+#custom-gsr.idle {
+  opacity: 0;
+}
+
+#bluetooth {
+  border-radius: 4px;
+  color: @blue-bluetooth;
+  background-color: @bg;
+  margin-right: 3px;
+  padding-left: 10px;
+  padding-right: 11px;
+}
+
+#bluetooth.disabled {
+  color: @blue-muted;
+  padding-right: 5px;
+  padding-left: 8px;
+  animation: blink 1.5s infinite ease;
+}
+
+#bluetooth.off {
+  color: @fg;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+#bluetooth.on {
+  color: @fg;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+#bluetooth.no-controller {
+  color: @fg-dark;
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+#pulseaudio {
+  color: @fg;
+  border-radius: 4px;
+  border: 0.5px solid @blue-muted;
+  margin: 3px 3px;
+  padding-left: 6px;
+  padding-right: 7px;
+}
+
+#pulseaudio.bluetooth {
+  color: @blue-bluetooth;
+}
+
+#pulseaudio.muted {
+  color: @fg-dark;
+  padding-right: 1px;
+}
+
+#custom-mic {
+  border-radius: 4px;
+  border: 0.5px solid @blue-muted;
+  color: @fg;
+  margin: 3px 3px 3px 0px;
+  /* top bottom right left */
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+#custom-mic.muted {
+  padding-right: 7px;
+  padding-left: 7px;
+  color: @fg-dark;
+}
+
+#audio {
+  border-radius: 4px;
+  background-color: @bg;
+  margin-right: 3px;
+}
+
+#backlight {
+  border-radius: 4px;
+  color: @yellow-soft;
+  background-color: @bg;
+  margin-right: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+#memory {
+  border-radius: 4px;
+  color: @fg;
+  border: 0.5px solid @blue-muted;
+  margin: 3px 3px;
+  padding-right: 8px;
+  padding-left: 5px;
+}
+
+#cpu {
+  border-radius: 4px;
+  color: @fg;
+  border: 0.5px solid @blue-muted;
+  margin: 3px 0px;
+  padding-right: 7px;
+  padding-left: 5px;
+}
+
+#temperature {
+  border-radius: 4px;
+  margin: 3px 3px;
+  border: 0.5px solid @blue-muted;
+  /* color: @aqua; */
+  color: @cyan-soft;
+  padding-right: 6px;
+  padding-left: 5px;
+}
+
+#temperature.warning {
+  color: @orange;
+}
+
+#temperature.critical {
+  color: @red;
+}
+
+#hardware {
+  border-radius: 4px;
+  background-color: @bg;
+  margin-right: 3px;
+}
+
+#network {
+  border-radius: 4px;
+  background-color: @bg;
+  margin-right: 3px;
+}
+
+#network.ethernet {
+  color: @fg;
+  padding-left: 7px;
+  padding-right: 8px;
+}
+
+#network.wifi {
+  color: @fg;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#network.disconnected {
+  color: @fg-dark;
+  padding-left: 9px;
+  padding-right: 8px;
+}
+
+#network.linked {
+  color: @fg-dark;
+  padding-left: 8px;
+  padding-right: 8px;
+  animation: blink 1.5s infinite ease;
+}
+
+#network.disabled {
+  color: @blue-muted;
+  padding-left: 7px;
+  padding-right: 4px;
+  animation: blink 1.5s infinite ease;
+}
+
+#custom-power {
+  border-radius: 4px;
+  color: @blue-light;
+  background-color: @bg;
+  margin-right: 4px;
+  padding-right: 7px;
+  padding-left: 6px;
+}

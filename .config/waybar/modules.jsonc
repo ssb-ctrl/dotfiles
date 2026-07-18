@@ -1,0 +1,298 @@
+{
+  "custom/fuzzel": {
+    "tooltip": false,
+    "tooltip-format": "<span color='#c0caf5'>Fuzzel menu</span>",
+    "format": "{icon}",
+    "format-icons": "",
+    "on-click": "fuzzel",
+    "on-click-right": "hyprctl dispatch scrolloverview:overview on"
+  },
+  "battery": {
+    "format-icons": {
+      "default": [
+        "󰁺",
+        "󰁻",
+        "󰁼",
+        "󰁽",
+        "󰁾",
+        "󰁿",
+        "󰂀",
+        "󰂂",
+        "󰁹"
+      ],
+      "charging": [
+        "󰢜",
+        "󰂆",
+        "󰂇",
+        "󰂈",
+        "󰢝",
+        "󰂉",
+        "󰂊",
+        "󰂋",
+        "󰂅"
+      ]
+      // 	"",
+      // 	"",
+      // 	"",
+      // 	"",
+      // 	""
+    },
+    "bat": "BAT1",
+    "interval": 5,
+    "states": {
+      "warning": 20,
+      "critical": 5
+    },
+    "format": "{capacity}% {icon}",
+    "tooltip": true,
+    "tooltip-format": "{timeTo}\nBattery health: {health}%\nPower drawn: {power}W"
+  },
+  "custom/nightlight": {
+    "exec": "/home/$USER/.local/bin/scripts/hyprsunset_status",
+    "format": "{}",
+    "on-click": "/home/$USER/.local/bin/scripts/hyprsunset_toggle",
+    "return-type": "json",
+    "interval": 2,
+    "tooltip": true
+  },
+  "custom/powerprofile": {
+    "exec": "/home/$USER/.local/bin/scripts/powerprofile_status",
+    "on-click": "/home/$USER/.local/bin/scripts/powerprofile_toggle",
+    "interval": 2,
+    "return-type": "json",
+    "tooltip": true
+  },
+  "clock": {
+    "interval": 60,
+    "timezone": "Asia/Kolkata",
+    "format": "{:%a %I:%M%p}", //instead of H use I for 12 hour , and %A for fullform of weekdays
+    "format-alt": "{:%b %d-%Y}",
+    "tooltip": true,
+    "tooltip-format": "{calendar}",
+    "smooth-scrolling-threshold": 1.0, //scroll on one mouse scroll
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "weeks-pos": "right",
+      "format": {
+        "months": "<span color='#ffc777'>{}</span>",
+        "days": "<span color='#c0caf5'>{}</span>",
+        "weeks": "<span color='#82aaff'>W{}</span>",
+        "weekdays": "<span color='#99ffdd'>{}</span>",
+        "today": "<span color='#f91880'><big><b>{}</b></big></span>"
+      }
+    },
+    "actions": {
+      "on-scroll-jp": "shift_up",
+      "on-scroll-down": "shift_down",
+      "on-click-middle": "shift_reset",
+      "on-click-right": "mode"
+    }
+  },
+  "custom/spotify": {
+    "exec": "/home/satya/.local/bin/scripts/spotify-status",
+    "return-type": "json",
+    "on-click-middle": "playerctl -p spotify play-pause",
+    "on-click-right": "playerctl -p spotify next",
+    "on-click": "playerctl -p spotify previous",
+    "interval": 1,
+    "tooltip": true
+  },
+  "hyprland/workspaces": {
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    },
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十"
+    },
+    "format": "{icon}",
+    "sort-by-number": true,
+    "on-click": "activate"
+  },
+  "custom/gsr": {
+    "exec": "/home/satya/.local/bin/scripts/gsr_status",
+    "interval": 3,
+    "return-type": "json",
+    "on-click": "gsr-ui",
+    "tooltip": true
+  },
+  "bluetooth": {
+    "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e bluetui'",
+    "format-no-controller": "",
+    "format-disabled": "...", //use rfkill to check 
+    "format-off": "󰂲", // controller power off
+    "format-on": "󰂯", //controller power on but no device connected
+    "format-connected": "{device_battery_percentage}% 󰂱", // device connected
+    "tooltip-format-no-controller": "{status}",
+    "tooltip-format-disabled": "{status}",
+    "tooltip-format-off": "Bluetooth controller 󰁔 {controller_alias} {status}",
+    "tooltip-format-on": "Bluetooth controller 󰁔 {controller_alias} {status}",
+    "tooltip-format-connected": "Device connected 󰁔 {device_alias}\nDevices connected 󰁔 {num_connections}"
+  },
+  "pulseaudio": {
+    "max-volume": 150,
+    "format": "{volume}% {icon}",
+    "format-muted": "0%  ",
+    "format-bluetooth": "{volume}% 󱡏",
+    "format-bluetooth-muted": "{volume}% 󱡏",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ],
+      "speaker": [
+        "",
+        "",
+        ""
+      ],
+      "headphone": "",
+      "headset": "",
+      "portable": "󰓃",
+      // "portable": "󰦧",
+      "car": "",
+      "phone": "󰏲",
+      // Device specific name 
+      "alsa_output.usb-JieLi_Technology_USB_Audio_2023.06.20-00.analog-stereo": ""
+    },
+    "reverse-scrolling": true,
+    "tooltip-format": "{desc}",
+    "on-click": "hyprctl dispatch exec '[workspace current]' 'pavucontrol -t 3'",
+    "scroll-step": 1
+  },
+  "custom/mic": {
+    "exec": "~/.local/bin/scripts/mic",
+    "interval": 1,
+    "format": "{}",
+    "return-type": "json",
+    "on-click": "hyprctl dispatch exec '[workspace current]' 'pavucontrol -t 4'",
+    "tooltip": true
+  },
+  "group/audio": {
+    "orientation": "horizontal",
+    "modules": [
+      "pulseaudio",
+      "custom/mic"
+    ]
+  },
+  "backlight": {
+    "reverse-scrolling": true,
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "󰛩",
+      "󱩎",
+      "󱩏",
+      "󱩐",
+      "󱩑",
+      "󱩒",
+      "󱩓",
+      "󱩔",
+      "󱩕",
+      "󱩖",
+      "󰛨"
+    ],
+    "on-scroll-up": "brightnessctl set +1%",
+    "on-scroll-down": "brightnessctl set 1%-",
+    "tooltip": true,
+    "tooltip-format": "Brightness level 󰁔 {percent}%"
+  },
+  "memory": {
+    "interval": 5,
+    "tooltip": true,
+    "tooltip-format": "Total mem 󰁔 {total}GiB\nUsed mem 󰁔 {used}GiB\nAvailable mem 󰁔 {avail}GiB\nTotal swap mem 󰁔 {swapTotal}GiB\nUsed swap mem 󰁔 {swapUsed}GiB\nAvailable swap mem 󰁔 {swapAvail}GiB",
+    "format": "{percentage}% ",
+    "format-warning": "<span color='#ffc777'>{percentage}% </span>",
+    "format-critical": "<span color='#ff8b8b'>{percentage}% </span>",
+    "states": {
+      "warning": 60,
+      "critical": 75
+    },
+    "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e btop'"
+  },
+  "cpu": {
+    "interval": 5,
+    "format": "{usage}% ",
+    "format-warning": "<span color='#ffc777'>{usage}% </span>",
+    "format-critical": "<span color='#ff8b8b'>{usage}% </span>",
+    "states": {
+      "warning": 70,
+      "critical": 85
+    },
+    "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e nvtop'",
+    "tooltip": true
+  },
+  "temperature": {
+    "interval": 5,
+    "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
+    "input-filename": "temp1_input",
+    "warning-threshold": 75,
+    "critical-threshold": 95,
+    "format": "{temperatureC}°C {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "tooltip": true,
+    "tooltip-format": "Current Temperature 󰁔 {}°C"
+  },
+  "group/hardware": {
+    "orientation": "horizontal",
+    // "drawer": {
+    //  "transition-duration": 600,
+    //  "transition-left-to-right": true,
+    //  "start-expanded": true
+    // },
+    "modules": [
+      "memory",
+      "cpu",
+      "temperature"
+    ]
+  },
+  "network": {
+    "interval": 5,
+    "tooltip": true,
+    "family": "ipv4_6",
+    "format-icons": [
+      "󰤯",
+      "󰤟",
+      "󰤢",
+      "󰤥",
+      "󰤨"
+    ],
+    "format-wifi": "{bandwidthDownBytes} {icon}",
+    "format-ethernet": "{bandwidthDownBytes} 󰀂",
+    "format-disconnected": "󰤮 ?",
+    "format-disabled": "󰯡 ...",
+    // "format-disabled": "󰀝",
+    "format-linked": "{ifname} (No_ip)",
+    "tooltip-format-wifi": "wifi 󰁔 {essid}",
+    "tooltip-format-ethernet": "ethernet 󰁔 {gwaddr}",
+    "tooltip-format-disconnected": "wifi disconnected",
+    "tooltip-format-disabled": "wifi disabled",
+    "tooltip-format-linked": "{ifname} is Up but NO IP assigned",
+    "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e impala'"
+  },
+  "custom/power": {
+    "tooltip": true,
+    "tooltip-format": "Exit menu",
+    "format-icons": "",
+    "format": "{icon}",
+    "on-click": "hyprctl dispatch exec '[workspace current]' 'wlogout -b 2 -s'"
+  }
+}
