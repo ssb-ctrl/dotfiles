@@ -1,0 +1,48 @@
+* {
+	background-image: none;
+	box-shadow: none;
+}
+
+window {
+	/* background-color: rgba(33, 35, 55, 0.98); */
+	background-color: rgba(26, 27, 38, 0.96);
+}
+
+button {
+  transition: 0.3s ease;
+  margin: 6px;
+  border-radius: 0;
+  border-color: rgba(0,0,0,0.55);
+	border-style: solid;
+	border-width: 1px;
+	background-color: #212337;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 12%;
+  color: #c0caf5;
+  font-size: 15px;
+}
+
+button:focus, button:active {
+	border-width: 2px;
+  border-color: #82aaff;
+	background-color: #3700B3;
+	background-size: 24%;
+	outline-style: none;
+}
+
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}

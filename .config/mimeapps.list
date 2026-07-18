@@ -1,0 +1,115 @@
+[Default Applications]
+# =========================
+# Directories
+# =========================
+# inode/directory=org.gnome.Nautilus.desktop
+inode/directory=yazi.desktop
+
+# =========================
+# Browser / Web
+# =========================
+x-scheme-handler/http=helium.desktop
+x-scheme-handler/https=helium.desktop
+text/html=helium.desktop
+application/xhtml+xml=helium.desktop
+
+# =========================
+# PDF
+# =========================
+application/pdf=app.zen_browser.zen.desktop
+
+# =========================
+# Plain Text
+# =========================
+inode/x-empty=nvim.desktop
+text/plain=nvim.desktop
+
+# =========================
+# Markdown
+# =========================
+text/markdown=obsidian.desktop
+
+# =========================
+# C / C++
+# =========================
+text/x-c=nvim.desktop
+text/x-c++=nvim.desktop
+text/x-chdr=nvim.desktop
+text/x-c++hdr=nvim.desktop
+
+# =========================
+# Python
+# =========================
+text/x-python=nvim.desktop
+
+# =========================
+# Java
+# =========================
+text/x-java=nvim.desktop
+
+# =========================
+# Rust
+# =========================
+text/x-rust=nvim.desktop
+
+# =========================
+# Go
+# =========================
+text/x-go=nvim.desktop
+
+# =========================
+# Shell
+# =========================
+application/x-shellscript=nvim.desktop
+text/x-shellscript=nvim.desktop
+
+# =========================
+# JSON / YAML / XML
+# =========================
+application/json=nvim.desktop
+text/x-json=nvim.desktop
+application/xml=nvim.desktop
+text/xml=nvim.desktop
+application/yaml=nvim.desktop
+text/yaml=nvim.desktop
+
+# =========================
+# Images
+# =========================
+image/png=viewnior.desktop
+image/jpeg=viewnior.desktop
+image/jpg=viewnior.desktop
+image/webp=viewnior.desktop
+# image/gif=viewnior.desktop
+image/svg+xml=viewnior.desktop
+image/bmp=viewnior.desktop
+image/tiff=viewnior.desktop
+
+# =========================
+# Audio
+# =========================
+audio/mpeg=mpv.desktop       
+audio/mp4=mpv.desktop       
+audio/x-m4a=mpv.desktop    
+audio/x-flac=mpv.desktop  
+audio/ogg=mpv.desktop    
+audio/x-opus+ogg=mpv.desktop 
+audio/wav=mpv.desktop
+audio/x-wav=mpv.desktop
+audio/aac=mpv.desktop
+audio/x-aiff=mpv.desktop    
+audio/x-ms-wma=mpv.desktop 
+
+# =========================
+# Video
+# =========================
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop    
+video/webm=mpv.desktop
+video/x-msvideo=mpv.desktop     
+video/x-ms-wmv=mpv.desktop     
+video/quicktime=mpv.desktop   
+video/mpeg=mpv.desktop       
+video/ogg=mpv.desktop       
+video/3gpp=mpv.desktop     
+video/x-flv=mpv.desktop   
