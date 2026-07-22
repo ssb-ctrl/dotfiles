@@ -4,3 +4,6 @@
 README\.md
 LICENSE
 \.cache
+cache.*
+log.*
+__pycache__
