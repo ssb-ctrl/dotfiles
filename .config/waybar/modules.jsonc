@@ -276,10 +276,10 @@
       "󰤨"
     ],
     "format-wifi": "{bandwidthDownBytes} {icon}",
-    "format-ethernet": "{bandwidthDownBytes} 󰀂",
+    "format-ethernet": "{bandwidthDownBytes} 󰈀",
     "format-disconnected": "󰤮 ?",
-    "format-disabled": "󰯡 ...",
-    // "format-disabled": "󰀝",
+    // "format-disabled": "󰯡 ...",
+    "format-disabled": "󰀝...",
     "format-linked": "{ifname} (No_ip)",
     "tooltip-format-wifi": "wifi 󰁔 {essid}",
     "tooltip-format-ethernet": "ethernet 󰁔 {gwaddr}",
