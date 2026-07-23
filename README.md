@@ -1,17 +1,20 @@
-<div align="center">
-![banner](Preview/banner.png)
-</div>
+<h1 align="center"> Satya Ctrl Arch Rice</h1>
 
-First ever 'official' rice. Based on ぼっち・ざ・ろっく！
+<p align="center">
+  <img src="./Preview/banner.png" alt="Your Rice Name" style="width: 85%;">
+</p>
 
-Created in Arch Linux with Hyprland.
+<p align="center">First ever 'official' rice. Based on ぼっち・ざ・ろっく！<br>Created in Arch Linux with Hyprland.
+<br><br>
+<b>Disclaimer: This was all done on my old Acer Spin 3 laptop.</b>
+</p>
 
 ## 📦 Programs
 
 List of programs and tools I use.
 
 | Component | Program |
-| --- | --- |
+|-----------|---------|
 | Windows Manager 🪟 | hyprland |
 | Terminal 🖥️ | foot |
 | Shell 🐚 | zsh |
@@ -34,12 +37,16 @@ List of programs and tools I use.
 
 ## 🎸 Preview
 
-![preview1](Preview/preview1.png)
-<!-- ![preview2](Preview/preview2.png) -->
-<!-- ![preview3](Preview/preview3.png) -->
+![Preview](./Preview/preview1.png)
 
 ## 📸 More Screenshots
 
-<!-- ![screenshot1](Screenshots/screenshot1.png) -->
-<!-- ![screenshot2](Screenshots/screenshot2.png) -->
-<!-- ![screenshot3](Screenshots/screenshot3.png) -->
+<p align="center">
+  <img src="./Screenshots/screenshot1.png" alt="Screenshot 1" width="75%" />
+</p>
+<p align="center">
+  <img src="./Screenshots/screenshot2.png" alt="Screenshot 2" width="75%" />
+</p>
+<p align="center">
+  <img src="./Screenshots/screenshot3.png" alt="Screenshot 3" width="75%" />
+</p>
