@@ -38,15 +38,6 @@ List of programs and tools I use.
 <!-- ![preview2](Preview/preview2.png) -->
 <!-- ![preview3](Preview/preview3.png) -->
 
-## 📝 Credits
-
-- **Hyprland** - [hyprland](https://github.com/hyprwm/Hyprland)
-- **Waybar** - [waybar](https://github.com/Alexays/Waybar)
-- **Foot** - [foot](https://codeberg.org/dnkl/foot)
-- **Fuzzel** - [fuzzel](https://codeberg.org/dnkl/fuzzel)
-- **Yazi** - [yazi](https://github.com/sxyazi/yazi)
-- **Fastfetch** - [fastfetch](https://github.com/fastfetch-cli/fastfetch)
-
 ## 📸 More Screenshots
 
 <!-- ![screenshot1](Screenshots/screenshot1.png) -->
