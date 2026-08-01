@@ -2,7 +2,7 @@
   "include": "~/.config/waybar/style.css",
   "layer": "top",
   "position": "top",
-  "mode": "dock",
+  "mode": "top",
   "spacing": 0,
   "margin-top": 6,
   "margin-bottom": 0,

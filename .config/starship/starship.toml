@@ -215,5 +215,5 @@ disabled = false
 disabled = false
 # success_symbol ="[⤷](bold green)"
 # success_symbol ="[](bold green)"
-success_symbol ="[󰁔](bold green)"
+success_symbol ="[󰁔](bold #9eef4a)"
 error_symbol ="[󰁔](bold red)"

@@ -243,8 +243,8 @@ button {
   color: @blue-bluetooth;
   background-color: @bg;
   margin-right: 3px;
-  padding-left: 10px;
-  padding-right: 11px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 #bluetooth.disabled {

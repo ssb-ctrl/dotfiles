@@ -148,7 +148,7 @@
     "format": "{volume}% {icon}",
     "format-muted": "0%  ",
     "format-bluetooth": "{volume}% 󱡏",
-    "format-bluetooth-muted": "{volume}% 󱡏",
+    "format-bluetooth-muted": "{volume}% 󱡏 ",
     "format-icons": {
       "default": [
         "",
@@ -167,7 +167,7 @@
       "car": "",
       "phone": "󰏲",
       // Device specific name 
-      "alsa_output.usb-JieLi_Technology_USB_Audio_2023.06.20-00.analog-stereo": ""
+      "alsa_output.usb-JieLi_Technology_USB_Audio_2023.06.20-00.analog-stereo": "",
     },
     "reverse-scrolling": true,
     "tooltip-format": "{desc}",
@@ -218,8 +218,8 @@
     "format-warning": "<span color='#ffc777'>{percentage}% </span>",
     "format-critical": "<span color='#ff8b8b'>{percentage}% </span>",
     "states": {
-      "warning": 60,
-      "critical": 75
+      "warning": 70,
+      "critical": 85
     },
     "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e btop'"
   },

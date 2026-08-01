@@ -2,8 +2,8 @@
 
 status=$(playerctl -p spotify status 2>/dev/null)
 MAX=28
-ARTIST=$(playerctl -p spotify metadata xesam:artist)
-TITLE=$(playerctl -p spotify metadata xesam:title)
+ARTIST=$(playerctl --player spotify metadata xesam:artist)
+TITLE=$(playerctl --player spotify metadata xesam:title)
 
 if [[ "$status" == "Playing" ]]; then
   SONG=$(playerctl metadata -p spotify --format "{{title}} - {{artist}}")

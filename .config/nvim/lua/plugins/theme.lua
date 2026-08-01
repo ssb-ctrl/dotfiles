@@ -24,7 +24,7 @@ return {
 		on_highlights = function(highlights, colors) --can be used to change default colors of highlights groups
 			local hl = highlights
 			hl.BufferlineCloseButtonSelected =
-				{ cterm = underline, underline = true, sp = "#82aaff", bg = "#212337", fg = "#f996a6" }
+				{ cterm = underline, underline = true, sp = "#82aaff", bg = "#212337", fg = "#ff757f" }
 			-- Snacks Indenting
 			hl.SnacksIndent = { fg = "#42486e" }
 			hl.SnacksIndentChunk = { fg = "#fca7ea" }
