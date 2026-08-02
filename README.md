@@ -1,16 +1,19 @@
 <h1 align="center">Satya Ctrl Arch Rice</h1>
 
-<p align="center"> <a
-href="https://github.com/ssb-ctrl/dotfiles/blob/main/Preview/banner.png"> <img
-src="https://github.com/ssb-ctrl/dotfiles/raw/main/Preview/banner.png"
-alt="Banner"> </a> </p>
+<p align="center">
+  <a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Preview/banner.png">
+    <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Preview/banner.png" alt="Banner">
+  </a>
+</p>
 
-<p align="center"> First ever 'official' rice. Based on <a
-href="https://anilist.co/anime/130003/BOCCHI-THE-ROCK/">ぼっち・ざ・ろっく！</a><br>
-Created in Arch Linux with Hyprland. </p>
+<p align="center">
+  First ever 'official' rice. Based on <a href="https://anilist.co/anime/130003/BOCCHI-THE-ROCK/">ぼっち・ざ・ろっく！</a><br>
+  Created in Arch Linux with Hyprland.
+</p>
 
-<p align="center"> <b>Disclaimer: This was all done on my old Acer Spin 3
-laptop.</b> </p>
+<p align="center">
+  <b>Disclaimer: This was all done on my old Acer Spin 3 laptop.</b>
+</p>
 
 ## 📦 Programs
 
@@ -50,16 +53,15 @@ List of programs and tools I use.
 ## 📸 More Screenshots
 
 <p align="center">
-  <table>
-    <tr>
-      <td><a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Screenshots/sc-1.png"><img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-1.png" width="280"></a></td>
-      <td><a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Screenshots/sc-2.png"><img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-2.png" width="280"></a></td>
-      <td><a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Screenshots/sc-3.png"><img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-3.png" width="280"></a></td>
-    </tr>
-    <tr>
-      <td><a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Screenshots/sc-4.png"><img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-4.png" width="280"></a></td>
-      <td><a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Screenshots/sc-5.png"><img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-5.png" width="280"></a></td>
-      <td><a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Screenshots/sc-6.png"><img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-6.png" width="280"></a></td>
-    </tr>
-  </table>
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-1.png" width="270" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-2.png" width="270" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-3.png" width="270" />
+  <br/>
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-4.png" width="270" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-5.png" width="270" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-6.png" width="270" />
+  <br/>
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-7.png" width="270" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-8.png" width="270" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-9.png" width="270" />
 </p>
