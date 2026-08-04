@@ -1,4 +1,4 @@
-<h1 align="center">Satya Ctrl Arch Rice</h1>
+<h1 align="center">"Elegant Hyprland rice, inspired by the Tokyo Nocturne color pallete"</h1>
 
 <p align="center">
   <a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Preview/banner.png">

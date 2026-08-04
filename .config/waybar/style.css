@@ -82,7 +82,7 @@ tooltip {
   background-color: @bg;
   color: @blue-arch;
   margin-right: 3px;
-  margin-left: 4px;
+  margin-left: 5px;
   padding-left: 8px;
   padding-right: 7px;
 }
@@ -296,8 +296,8 @@ button {
   color: @fg;
   margin: 3px 3px 3px 0px;
   /* top bottom right left */
-  padding-right: 8px;
-  padding-left: 8px;
+  padding-right: 6px;
+  padding-left: 6px;
 }
 
 #custom-mic.muted {
@@ -405,7 +405,7 @@ button {
   border-radius: 4px;
   color: @blue-light;
   background-color: @bg;
-  margin-right: 4px;
+  margin-right: 5px;
   padding-right: 7px;
   padding-left: 6px;
 }
