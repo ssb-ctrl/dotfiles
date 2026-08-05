@@ -5,6 +5,9 @@ vim.g.maplocalleader = "\\"
 -- global options for Snacks.animate
 vim.g.snacks_animate = true
 
+-- height of bottom column
+-- vim.opt.cmdheight = 0
+
 -- LinNr and RelativeLineNr
 vim.opt.number = true
 vim.opt.relativenumber = true

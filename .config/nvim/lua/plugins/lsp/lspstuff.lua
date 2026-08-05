@@ -59,6 +59,7 @@ return {
 						globals = { "vim" },
 					},
 					workspace = {
+						-- dont prompt about third party libraries
 						checkThirdParty = false,
 						library = vim.list_extend(vim.api.nvim_get_runtime_file("", true), { "/usr/share/hypr/stubs" }),
 					},

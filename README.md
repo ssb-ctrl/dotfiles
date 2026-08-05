@@ -65,3 +65,35 @@ List of programs and tools I use.
   <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-8.png" width="270" />
   <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-9.png" width="270" />
 </p>
+
+## 🛠️ Installation
+
+### 1. Install git and stow
+
+```bash
+sudo pacman -S git stow --needed
+```
+
+### 2. Clone the repo
+
+```bash
+git clone https://github.com/ssb-ctrl/dotfiles.git ~/dotfiles
+```
+
+### 3. Stow it
+
+```bash
+cd ~/dotfiles
+stow ./
+```
+
+## 🎨 Extra Tweaks
+
+### Neuwaita icons for fuzzel
+
+This rice uses [Neuwaita](https://github.com/Ashwatthaamaa/Neuwaita) — a neumorphic Adwaita-style icon pack — for app icons in the fuzzel launcher.
+
+```bash
+mkdir -p ~/.local/share/icons/Neuwaita
+git clone https://github.com/Ashwatthaamaa/Neuwaita.git ~/.local/share/icons/Neuwaita
+```

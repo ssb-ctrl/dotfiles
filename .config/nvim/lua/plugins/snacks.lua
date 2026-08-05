@@ -17,6 +17,7 @@ return {
 			},
 		},
 		input = {
+			-- if enabled nvim will use snacks ui for vim.input()
 			enabled = true,
 			win = {
 				border = "single", -- single rounded double
@@ -115,9 +116,9 @@ return {
 		-- Styles
 		styles = {
 			-- input = {
-			--   b = {
-			--     completion = true,
-			--   },
+			-- 	b = {
+			-- 		completion = true,
+			-- 	},
 			-- },
 		},
 	},
@@ -235,7 +236,7 @@ return {
 			function()
 				Snacks.picker.keymaps({
 					layout = {
-						preset = "ivy",
+						preset = "vertical",
 					},
 				})
 			end,

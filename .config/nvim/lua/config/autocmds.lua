@@ -16,7 +16,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
--- go to last loc when opening a buffer
+-- Go to last loc when opening a buffer or to the last saved location
 vim.api.nvim_create_autocmd("BufReadPost", {
 	group = augroup("last_loc"),
 	callback = function(event)
@@ -31,6 +31,30 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 		if mark[1] > 0 and mark[1] <= lcount then
 			pcall(vim.api.nvim_win_set_cursor, 0, mark)
 		end
+	end,
+})
+
+-- Notify whether or not a LSP is attached to a buffer
+local notified = {} ---@type table<string, boolean>
+vim.api.nvim_create_autocmd("LspAttach", {
+	callback = function(ev)
+		local client = vim.lsp.get_client_by_id(ev.data.client_id)
+		if not client then
+			return
+		end
+		local ft = vim.bo[ev.buf].filetype
+		local key = client.name .. ":" .. ft
+		-- if once notified for a lsp then dont notify again
+		if notified[key] then
+			return
+		end
+		-- else if not notified then set notified as true for that lsp
+		notified[key] = true
+		vim.notify(("%s attached to this buffer"):format(client.name), vim.log.levels.INFO, {
+			id = "lsp_attach_" .. key,
+			title = "LSP",
+			icon = "",
+		})
 	end,
 })
 

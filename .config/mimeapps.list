@@ -2,8 +2,8 @@
 # =========================
 # Directories
 # =========================
-# inode/directory=org.gnome.Nautilus.desktop
-inode/directory=yazi.desktop
+inode/directory=thunar.desktop
+# inode/directory=yazi.desktop
 
 # =========================
 # Browser / Web
