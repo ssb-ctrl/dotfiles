@@ -7,39 +7,45 @@
 </p>
 
 <p align="center">
-  First ever 'official' rice. Based on <a href="https://anilist.co/anime/130003/BOCCHI-THE-ROCK/">ぼっち・ざ・ろっく！</a><br>
   Created in Arch Linux with Hyprland.
 </p>
 
 <p align="center">
-  <b>Disclaimer: This was all done on my old Acer Spin 3 laptop.</b>
+  <b>Disclaimer: This was all done on my old Lenevo yoga slim 7i btw !</b>
 </p>
 
 ## 📦 Programs
 
 List of programs and tools I use.
 
-| Component            | Program                                                                  |
-| --------------------- | ------------------------------------------------------------------------- |
-| Windows Manager 🪟     | [hyprland](https://github.com/hyprwm/Hyprland)                          |
-| Terminal 🖥️           | [foot](https://codeberg.org/dnkl/foot)                                  |
-| Shell 🐚               | [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)           |
-| Fetch 🖼️              | [fastfetch](https://github.com/fastfetch-cli/fastfetch)                 |
-| File Manager 📁        | [yazi](https://github.com/sxyazi/yazi)                                  |
-| Editor 📝              | [neovim](https://github.com/neovim/neovim)                              |
-| Browser 🌐             | [firefox](https://www.mozilla.org/firefox/)                             |
-| Bar 📊                 | [waybar](https://github.com/Alexays/Waybar)                             |
-| Launcher 🚀            | [fuzzel](https://codeberg.org/dnkl/fuzzel)                              |
-| Notifications 🔔       | [mako](https://github.com/emersion/mako)                                |
-| Lockscreen 🔒          | [hyprlock](https://github.com/hyprwm/hyprlock)                          |
-| Logout Menu 🚪         | [wlogout](https://github.com/ArtsyMacaw/wlogout)                        |
-| Music Player 🎵        | [spotify](https://www.spotify.com/) ([spicetify](https://github.com/spicetify/spicetify-cli)) |
-| Visualiser 📊          | [cava](https://github.com/karlstav/cava)                                |
-| Screenshot Tool 📸     | [satty](https://github.com/gabm/satty)                                  |
-| Resource Monitor 📈    | [btop](https://github.com/aristocratos/btop)                            |
-| Clipboard Manager 📋   | [cliphist](https://github.com/sentriz/cliphist)                         |
-| GTK Theme 🎨           | [Kvantum](https://github.com/tsujan/Kvantum)                            |
-| Others 🌱              | cbonsai, asciiquarium                                                   |
+| Component              |  Program                               |
+| -----------------------|----------------------------------------|
+| Windows Manager 🪟     | hyprland                               |
+| Terminal 🖥️            | foot                                   |
+| Shell 🐚               | zsh                                    |
+| System info 🖼️         | fastfetch                              |
+| File Manager 📁        | thunar, yazi                           |
+| Editor 📝              | neovim                                 |
+| Browser 🌐             | zen, helium                            |
+| Bar 📊                 | waybar                                 |
+| Launcher 🚀            | fuzzel                                 |
+| Notifications 🔔       | mako                                   |
+| Firewall 🛡️            | ufw                                    |
+| Lockscreen 🔒          | hyprlock                               |
+| Logout Menu 🚪         | wlogout                                |
+| Music Player 🎵        | spotify + spicetify                    |
+| Video Player 🎬        | mpv                                    |
+| File Sync 📡           | syncthing                              |
+| File Sharing 📤        | localsend                              |
+| Wallpaper Utility 🌄   | awww(previously swww                   |
+| Screenshot Tool 📸     | hyprshot + satty                       |
+| Screen Recording 📹    | gpu screen recorder(gsr)               |
+| Password Manager 🔑    | keepassxc                              |
+| Resource Monitor 📈    | btop                                   |
+| Notes 🧠               | obsidian                               |
+| Clipboard Manager 📋   | cliphist                               |
+| GTK Theme 🎨           | nwg-look                               |
+| QT Theme 🎨            | kvantum                                |
 
 ## 🎸 Preview
 
