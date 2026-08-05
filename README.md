@@ -21,7 +21,7 @@ List of programs and tools I use.
 | Component              |  Program                               |
 | -----------------------|----------------------------------------|
 | Windows Manager 🪟     | hyprland                               |
-| Terminal 🖥️            | foot                                   |
+| Terminal 🖥️            | kitty, foot                            |
 | Shell 🐚               | zsh                                    |
 | System info 🖼️         | fastfetch                              |
 | File Manager 📁        | thunar, yazi                           |
@@ -37,15 +37,15 @@ List of programs and tools I use.
 | Video Player 🎬        | mpv                                    |
 | File Sync 📡           | syncthing                              |
 | File Sharing 📤        | localsend                              |
-| Wallpaper Utility 🌄   | awww(previously swww                   |
+| Wallpaper Utility 🌄   | awww(previously swww)                  |
 | Screenshot Tool 📸     | hyprshot + satty                       |
 | Screen Recording 📹    | gpu screen recorder(gsr)               |
 | Password Manager 🔑    | keepassxc                              |
 | Resource Monitor 📈    | btop                                   |
 | Notes 🧠               | obsidian                               |
 | Clipboard Manager 📋   | cliphist                               |
-| GTK Theme 🎨           | nwg-look                               |
-| QT Theme 🎨            | kvantum                                |
+| GTK Theme Manager 🎨   | nwg-look                               |
+| QT Theme Manager 🎨    | kvantum                                |
 
 ## 🎸 Preview
 
@@ -65,11 +65,6 @@ List of programs and tools I use.
   <br/>
   <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-4.png" width="270" />
   <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-5.png" width="270" />
-  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-6.png" width="270" />
-  <br/>
-  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-7.png" width="270" />
-  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-8.png" width="270" />
-  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-9.png" width="270" />
 </p>
 
 ## 🛠️ Installation
