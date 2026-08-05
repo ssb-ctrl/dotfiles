@@ -59,12 +59,11 @@ List of programs and tools I use.
 ## 📸 More Screenshots
 
 <p align="center">
-  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-1.png" width="270" />
-  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-2.png" width="270" />
-  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-3.png" width="270" />
-  <br/>
-  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-4.png" width="270" />
-  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-5.png" width="270" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-1.png" width="800" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-2.png" width="800" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-3.png" width="800" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-4.png" width="800" />
+  <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-5.png" width="800" />
 </p>
 
 ## 🛠️ Installation
