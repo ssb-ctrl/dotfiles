@@ -18,8 +18,8 @@
 
 List of programs and tools I use.
 
-| Component              |  Program                               |
-| -----------------------|----------------------------------------|
+| Component              | Program                                |
+|------------------------|----------------------------------------|
 | Windows Manager 🪟     | hyprland                               |
 | Terminal 🖥️            | kitty, foot                            |
 | Shell 🐚               | zsh                                    |
@@ -27,7 +27,7 @@ List of programs and tools I use.
 | File Manager 📁        | thunar, yazi                           |
 | Editor 📝              | neovim                                 |
 | Browser 🌐             | zen, helium                            |
-| Bar 📊                 | waybar                                 |
+| Status Bar 📊          | waybar                                 |
 | Launcher 🚀            | fuzzel                                 |
 | Notifications 🔔       | mako                                   |
 | Firewall 🛡️            | ufw                                    |
