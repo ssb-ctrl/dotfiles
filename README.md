@@ -46,18 +46,6 @@ List of applications and tools I use.
 | GTK Theme Manager 🎨   | nwg-look                               |
 | QT Theme Manager 🎨    | kvantum                                |
 
-## 🎸 Preview
-
-<p align="center">
-<video
-  src="https://github.com/ssb-ctrl/dotfiles/raw/main/Preview/preview.mp4"
-  controls
-  muted
-  width="800">
-</video>
-</p>
-
-
 ## 📸 More Screenshots
 
 <p align="center"> <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-1.png" width="800" /> </p>
