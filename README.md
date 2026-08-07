@@ -7,10 +7,6 @@
 </p>
 
 <p align="center">
-  Created in Arch Linux with Hyprland.
-</p>
-
-<p align="center">
   <b>Disclaimer: This was all done on my old Lenevo yoga slim 7i btw !</b>
 </p>
 
@@ -20,6 +16,7 @@ List of programs and tools I use.
 
 | Component              | Program                                |
 |------------------------|----------------------------------------|
+| Distro 🐧              | Arch linux                             |
 | Windows Manager 🪟     | hyprland                               |
 | Terminal 🖥️            | kitty, foot                            |
 | Shell 🐚               | zsh                                    |
