@@ -1,17 +1,15 @@
 <h1 align="center">"✨ Elegant Hyprland rice, inspired by the Tokyonight color pallete 🌌"</h1>
 
-<p align="center">
-  <b>🎥 Click the banner below to watch the complete desktop showcase.</b>
-</p>
+🎥 Click the banner below to watch the complete desktop showcase.
 
 <p align="center">
-  <a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Preview/preview.mp4">
-    <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Preview/banner.png" alt="Banner">
+  <a href="https://drive.google.com/file/d/1KVeTj3xNYMrERf_Os1GSUdnPNIRJC-cD/view?usp=drive_link" target="_blank">
+    <img src="./Preview/banner.png" alt="Desktop Showcase" width="1000">
   </a>
 </p>
 
 <p align="center">
-  <b>Disclaimer: This was all done on my old Lenevo yoga slim 7i btw !</b>
+Disclaimer: This was all done on my old Lenevo yoga slim 7i btw !
 </p>
 
 ## 📦 Software packages
