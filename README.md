@@ -1,4 +1,4 @@
-<h1 align="center">"✨ Elegant Hyprland rice, inspired by the Tokyo Nocturne color pallete 🌌"</h1>
+<h1 align="center">"✨ Elegant Hyprland rice, inspired by the Tokyonight color pallete 🌌"</h1>
 
 <p align="center">
   <a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Preview/banner.png">
@@ -10,13 +10,13 @@
   <b>Disclaimer: This was all done on my old Lenevo yoga slim 7i btw !</b>
 </p>
 
-## 📦 Programs
+## 📦 Software packages
 
-List of programs and tools I use.
+List of applications and tools I use.
 
 | Component              | Program                                |
 |------------------------|----------------------------------------|
-| Distro 🐧              | Arch linux                             |
+| Distro 🐧              | archlinux                              |
 | Windows Manager 🪟     | hyprland                               |
 | Terminal 🖥️            | kitty, foot                            |
 | Shell 🐚               | zsh                                    |
@@ -36,7 +36,7 @@ List of programs and tools I use.
 | File Sharing 📤        | localsend                              |
 | Wallpaper Utility 🌄   | awww(previously swww)                  |
 | Screenshot Tool 📸     | hyprshot + satty                       |
-| Screen Recording 📹    | gpu screen recorder(gsr)               |
+| Screen Recording 📹    | gpu-screen-recorder(gsr)               |
 | Password Manager 🔑    | keepassxc                              |
 | Resource Monitor 📈    | btop                                   |
 | Notes 🧠               | obsidian                               |
@@ -47,11 +47,14 @@ List of programs and tools I use.
 ## 🎸 Preview
 
 <p align="center">
-  <video src="https://github.com/ssb-ctrl/dotfiles/raw/main/Preview/preview.mp4" controls muted width="800">
-    Your browser doesn't support inline video —
-    <a href="https://github.com/ssb-ctrl/dotfiles/raw/main/Preview/preview.mp4">watch it here</a> instead.
-  </video>
+<video
+  src="https://github.com/ssb-ctrl/dotfiles/raw/main/Preview/preview.mp4"
+  controls
+  muted
+  width="800">
+</video>
 </p>
+
 
 ## 📸 More Screenshots
 
@@ -61,10 +64,11 @@ List of programs and tools I use.
 <p align="center"> <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-4.png" width="800" /> </p>
 <p align="center"> <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-5.png" width="800" /> </p>
 <p align="center"> <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-6.png" width="800" /> </p>
+<p align="center"> <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-7.png" width="800" /> </p>
 
 ## 🛠️ Installation
 
-### 1. Install git and stow
+### 1. Install git and gnu stow
 
 ```bash
 sudo pacman -S git stow --needed

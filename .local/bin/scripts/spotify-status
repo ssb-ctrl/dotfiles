@@ -18,5 +18,5 @@ elif [[ "$status" == "Paused" ]]; then
     echo '{"text": " ", "tooltip": " Spotify currently paused", "class": "paused"}' 
 
 else
-    echo '{"text": " ⠄⠄⠄", "tooltip": " Spotify instance not running", "class": "idle"}' 
+    echo '{"text": "...", "tooltip": " Spotify instance not running", "class": "idle"}' 
 fi

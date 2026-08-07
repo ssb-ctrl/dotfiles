@@ -61,7 +61,7 @@ return {
 				{ section = "startup", indent = 10 },
 				{
 					section = "terminal",
-					cmd = "pokemon-colorscripts --no-title -rn darkrai,conkeldurr,ho-oh,thundurus,swampert,charizard,zapdos,articuno,moltres,mewtwo,lugia,palkia,dialga,giratina,cresselia,tornadus,zygarde,solgaleo,type-null,lunala,zacian,zamazenta; sleep inf",
+					cmd = "pokemon-colorscripts --no-title -rn darkrai,conkeldurr,ho-oh,thundurus,swampert,charizard,zapdos,articuno,moltres,mewtwo,lugia,palkia,dialga,giratina,cresselia,tornadus,zygarde,solgaleo,type-null,lunala,zacian,zamazenta,rayquaza; sleep inf",
 					random = 100,
 					height = 28,
 					indent = 8,

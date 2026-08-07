@@ -8,6 +8,9 @@ vim.g.snacks_animate = true
 -- height of bottom column
 -- vim.opt.cmdheight = 0
 
+-- undo
+vim.opt.undofile = true
+
 -- LinNr and RelativeLineNr
 vim.opt.number = true
 vim.opt.relativenumber = true
