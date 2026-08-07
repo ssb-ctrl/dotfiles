@@ -1,7 +1,11 @@
 <h1 align="center">"✨ Elegant Hyprland rice, inspired by the Tokyonight color pallete 🌌"</h1>
 
 <p align="center">
-  <a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Preview/banner.png">
+  <b>🎥 Click the banner below to watch the complete desktop showcase.</b>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ssb-ctrl/dotfiles/blob/main/Preview/preview.mp4">
     <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Preview/banner.png" alt="Banner">
   </a>
 </p>
