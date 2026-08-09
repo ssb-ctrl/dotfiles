@@ -3,7 +3,7 @@
 🎥 Click the banner below to watch the complete desktop showcase.
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/1KVeTj3xNYMrERf_Os1GSUdnPNIRJC-cD/view?usp=drive_link" target="_blank">
+  <a href="https://youtu.be/lv8aSjdJ6ZE">
     <img src="./Preview/banner.png" alt="Desktop Showcase" width="1000">
   </a>
 </p>
