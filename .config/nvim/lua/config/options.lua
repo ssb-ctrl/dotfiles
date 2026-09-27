@@ -8,8 +8,8 @@ vim.g.snacks_animate = true
 -- height of bottom column
 -- vim.opt.cmdheight = 0
 
--- undo
-vim.opt.undofile = true
+-- undo even after closing
+vim.opt.undofile = false
 
 -- LinNr and RelativeLineNr
 vim.opt.number = true
@@ -51,7 +51,7 @@ vim.opt.smartcase = true -- matches all but for Uppercase matches only Uppercase
 -- Folding of lines, use zf to manually fold , zc to close and zo to open folds
 vim.opt.foldenable = true -- global folding options, set to false to disable it globally
 vim.opt.foldlevel = 99
-vim.opt.foldmethod = "expr" -- indent expr manual
+vim.opt.foldmethod = "expr" -- indent, expr, manual
 vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()" -- for expr method
 
 -- Usefull for markdown files

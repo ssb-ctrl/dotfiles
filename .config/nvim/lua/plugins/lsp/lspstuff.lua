@@ -48,9 +48,6 @@ return {
 			},
 		})
 
-		-- declaring additional capabilities of blink.cmp to lang servers
-		local Capabilities = require("blink.cmp").get_lsp_capabilities()
-
 		-- Add lang servers config if you want to merge some custom settings with nvim-lspconfig default settings
 		vim.lsp.config("lua_ls", {
 			settings = {
@@ -61,11 +58,18 @@ return {
 					workspace = {
 						-- dont prompt about third party libraries
 						checkThirdParty = false,
-						library = vim.list_extend(vim.api.nvim_get_runtime_file("", true), { "/usr/share/hypr/stubs" }),
+						-- vim.list_extend(vim.api.nvim_get_runtime_file("", true), { "/usr/share/hypr/stubs" }),
+						library = {
+							vim.env.VIMRUNTIME,
+							"/usr/share/hypr/stubs",
+						},
 					},
 				},
 			},
 		})
+
+		-- declaring additional capabilities of blink.cmp to lang servers
+		local Capabilities = require("blink.cmp").get_lsp_capabilities()
 		vim.lsp.config("*", {
 			capabilities = Capabilities,
 		})

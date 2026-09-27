@@ -31,6 +31,9 @@ on-button-right=dismiss
 on-touch=none
 on-notify=exec mpv /home/$USER/.config/mako/system_sounds/notify8.mp3
 
+[mode=dnd]
+invisible=1
+
 [urgency="low"]
 default-timeout=1250
 

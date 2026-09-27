@@ -16,6 +16,16 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 	end,
 })
 
+-- disable semantic tokens when any LSP attaches to a buffer, only use nvim-treesitter parsing
+-- vim.api.nvim_create_autocmd("LspAttach", {
+-- 	callback = function(args)
+-- 		local client = vim.lsp.get_client_by_id(args.data.client_id)
+-- 		if client then
+-- 			client.server_capabilities.semanticTokensProvider = nil
+-- 		end
+-- 	end,
+-- })
+
 -- Go to last loc when opening a buffer or to the last saved location
 vim.api.nvim_create_autocmd("BufReadPost", {
 	group = augroup("last_loc"),

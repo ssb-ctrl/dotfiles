@@ -7,7 +7,7 @@ return {
 		style = "moon",
 		styles = {
 			-- Value is any valid attr-list value for `:help nvim_set_hl`
-			comments = { italic = true, dim = false }, --, fg = "#828bb8"
+			comments = { italic = true, dim = false },
 			keywords = { italic = true },
 			functions = { bold = true },
 			variables = {},
@@ -23,6 +23,7 @@ return {
 		end,
 		on_highlights = function(highlights, colors) --can be used to change default colors of highlights groups
 			local hl = highlights
+			hl.DiagnosticUnnecessary = { undercurl = false, underline = false, fg = "#636da6" }
 			hl.BufferlineCloseButtonSelected =
 				{ cterm = underline, underline = true, sp = "#82aaff", bg = "#212337", fg = "#ff757f" }
 			-- Snacks Indenting
@@ -33,7 +34,7 @@ return {
 			hl.LineNr = { fg = "#42486e" }
 			hl.LineNrAbove = { fg = "#42486e" }
 			hl.LineNrBelow = { fg = "#42486e" }
-			hl.CursorLineNr = { fg = "#ff996c" }
+			-- hl.CursorLineNr = { fg = "#ff996c" }
 			hl.Substitute = { undercurl = true, bg = "#ff757f", fg = "#1d2238" }
 			hl.CurSearch = { bg = "#f958af", fg = "#1d2238" }
 			hl.IncSearch = { bg = "#ff757f", fg = "#1d2238" } -- also controls the yankhighlight unless provided with a custom 'higroup' name

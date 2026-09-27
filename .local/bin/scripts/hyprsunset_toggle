@@ -1,12 +1,12 @@
 #!/usr/bin/env sh
 
-TEMP=4500
+TEMP=4300
 
 if pidof hyprsunset >/dev/null; then
-    killall -9 hyprsunset
-    notify-send Hyprsunset "Night light switched OFF" -a Hyprsunset -u low -i ~/Pictures/icons/sun-horizon-1.png  -h string:x-canonical-private-synchronous:Hyprsunset
+  killall -9 hyprsunset
+  notify-send Hyprsunset "Night light switched OFF" -a Hyprsunset -u low -i ~/Pictures/icons/sun-horizon-1.png -h string:x-canonical-private-synchronous:Hyprsunset
 
 else
-    hyprsunset -t $TEMP &
-	  notify-send Hyprsunset "Night light switched ON"  -a Hyprsunset -u low -i ~/Pictures/icons/sun-horizon.png  -h string:x-canonical-private-synchronous:Hyprsunset
+  hyprsunset -t $TEMP &
+  notify-send Hyprsunset "Night light switched ON" -a Hyprsunset -u low -i ~/Pictures/icons/sun-horizon.png -h string:x-canonical-private-synchronous:Hyprsunset
 fi

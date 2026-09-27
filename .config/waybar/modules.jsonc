@@ -7,6 +7,12 @@
     "on-click": "fuzzel",
     "on-click-right": "hyprctl dispatch scrolloverview:overview on"
   },
+  // "custom/dnd": {
+  //   "on-click": "~/.local/bin/scripts/dnd",
+  //   "tooltip": true,
+  //   // "tooltip-format": "",
+  //   // "on-click": "makoctl mode -t dnd"
+  // },
   "battery": {
     "format-icons": {
       "default": [
@@ -66,7 +72,7 @@
     "interval": 60,
     "timezone": "Asia/Kolkata",
     "format": "{:%a %I:%M%p}", //instead of H use I for 12 hour , and %A for fullform of weekdays
-    "format-alt": "{:%b %d-%Y}",
+    "format-alt": "{:%b %d %Y}",
     "tooltip": true,
     "tooltip-format": "{calendar}",
     "smooth-scrolling-threshold": 1.0, //scroll on one mouse scroll
@@ -136,33 +142,47 @@
     "format-disabled": "...", //use rfkill to check 
     "format-off": "󰂲", // controller power off
     "format-on": "󰂯", //controller power on but no device connected
-    "format-connected": "{device_battery_percentage}% 󰂱", // device connected
+    "format-icons": [
+      "󰤾",
+      "󰤿",
+      "󰥀",
+      "󰥁",
+      "󰥂",
+      "󰥃",
+      "󰥄",
+      "󰥅",
+      "󰥆",
+      "󰥈"
+    ],
+    "format-connected": "{device_battery_percentage}% 󰂱", // fallback 
+    "format-connected-battery": "{device_battery_percentage}% {icon}", // device connected
     "tooltip-format-no-controller": "{status}",
     "tooltip-format-disabled": "{status}",
     "tooltip-format-off": "Bluetooth controller 󰁔 {controller_alias} {status}",
     "tooltip-format-on": "Bluetooth controller 󰁔 {controller_alias} {status}",
-    "tooltip-format-connected": "Device connected 󰁔 {device_alias}\nDevices connected 󰁔 {num_connections}"
+    "tooltip-format-connected": "Bluetooth device 󰁔 {device_alias}\nNumber of connections 󰁔 {num_connections}"
   },
   "pulseaudio": {
     "max-volume": 150,
     "format": "{volume}% {icon}",
     "format-muted": "0%  ",
-    "format-bluetooth": "{volume}% 󱡏",
-    "format-bluetooth-muted": "{volume}% 󱡏 ",
+    "format-bluetooth": "{volume}% 󰂰",
+    "format-bluetooth-muted": "0% 󰂰 ",
     "format-icons": {
       "default": [
         "",
         "",
+        "",
         ""
       ],
       "speaker": [
         "",
         "",
+        "",
         ""
       ],
       "headphone": "",
       "headset": "",
-      "portable": "󰓃",
       // "portable": "󰦧",
       "car": "",
       "phone": "󰏲",
@@ -175,6 +195,7 @@
     "scroll-step": 1
   },
   "custom/mic": {
+    "portable": "󰓃",
     "exec": "~/.local/bin/scripts/mic",
     "interval": 1,
     "format": "{}",

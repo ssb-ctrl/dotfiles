@@ -154,7 +154,7 @@ rules = [
   { url = "{*.mp3,*.aac,*.aif,*.aiff,*.ape,*.cue,*.m3u,*.m3u8,*.m4a,*.oga,*.ogg,*.opus,*.wv,*.wvc }", fg = "#d54237", italic = true },
 
   # document
-  { url = "{*.doc,*dot,*dotm,*dotx,*.docx,*.docm,*.odt,*.ott,*.rtf}", fg = "#1c5ffb" },
+  { url = "{*.doc,*dot,*dotm,*dotx,*.docx,*.docm,*.odt,*.ott,*.rtf}", fg = "#3186ff" },
 
   # csv
   { url = "{*.csv,*.ots,*.ods,*.tsv,*.xls,*.xlsx}", fg = "#89e051" },
@@ -303,10 +303,10 @@ exts = [
 	{ name = "desktop", text = "", fg = "#563d7c" },
 	{ name = "diff", text = "", fg = "#41535b" },
 	{ name = "dll", text = "", fg = "#4d2c0b" },
-	{ name = "doc", text = "󰈬", fg = "#185abd" },
+	{ name = "doc", text = "󰈬", fg = "#3186ff" },
 	{ name = "Dockerfile", text = "󰡨", fg = "#458ee6" },
 	{ name = "dockerignore", text = "󰡨", fg = "#458ee6" },
-	{ name = "docx", text = "󰈬", fg = "#185abd" },
+	{ name = "docx", text = "󰈬", fg = "#3186ff" },
 	{ name = "dot", text = "󱁉", fg = "#30638e" },
 	{ name = "download", text = "", fg = "#44cda8" },
 	{ name = "drl", text = "", fg = "#ffafaf" },

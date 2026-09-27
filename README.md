@@ -55,6 +55,7 @@ List of applications and tools I use.
 <p align="center"> <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-5.png" width="800" /> </p>
 <p align="center"> <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-6.png" width="800" /> </p>
 <p align="center"> <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-7.png" width="800" /> </p>
+<p align="center"> <img src="https://github.com/ssb-ctrl/dotfiles/raw/main/Screenshots/sc-8.png" width="800" /> </p>
 
 ## 🛠️ Installation
 
@@ -81,7 +82,7 @@ stow ./
 
 ### Neuwaita icons for fuzzel
 
-This rice uses [Neuwaita](https://github.com/Ashwatthaamaa/Neuwaita) — a neumorphic Adwaita-style icon pack — for app icons in the fuzzel launcher.
+This rice uses [Neuwaita](https://github.com/Ashwatthaamaa/Neuwaita) - a neumorphic Adwaita-style icon pack for app icons in the fuzzel launcher.
 
 ```bash
 mkdir -p ~/.local/share/icons/Neuwaita

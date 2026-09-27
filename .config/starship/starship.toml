@@ -91,7 +91,7 @@ format = '[+$added]($added_style)\\[-$deleted]($deleted_style) '
 
 [git_status]
 disabled = false 
-format = '[\[$all_status$ahead_behind\]]() '
+format = '[\[$all_status$ahead_behind\]](bold #ff96fe) '
 # format = '[$all_status$ahead_behind]() '
 # $all_status == $conflicted$stashed$deleted$renamed$modified$typechanged$staged$untracked
 # $ahead_behind	Displays diverged, ahead, behind or up_to_date format string based on the current status of the repo
@@ -215,5 +215,5 @@ disabled = false
 disabled = false
 # success_symbol ="[⤷](bold green)"
 # success_symbol ="[](bold green)"
-success_symbol ="[󰁔](bold #9eef4a)"
+success_symbol ="[󰁔](bold #c3e88f)"
 error_symbol ="[󰁔](bold red)"
