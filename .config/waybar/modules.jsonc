@@ -114,16 +114,26 @@
       "5": []
     },
     "format-icons": {
-      "1": "一",
-      "2": "二",
-      "3": "三",
-      "4": "四",
-      "5": "五",
-      "6": "六",
-      "7": "七",
-      "8": "八",
-      "9": "九",
-      "10": "十"
+      //"1": "一",
+      //"2": "二",
+      //"3": "三",
+      //"4": "四",
+      //"5": "五",
+      //"6": "六",
+      //"7": "七",
+      //"8": "八",
+      //"9": "九",
+      //"10": "十"
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "10"
     },
     "format": "{icon}",
     "sort-by-number": true,
@@ -232,7 +242,7 @@
     "tooltip-format": "Brightness level 󰁔 {percent}%"
   },
   "memory": {
-    "interval": 5,
+    "interval": 3,
     "tooltip": true,
     "tooltip-format": "Total mem 󰁔 {total}GiB\nUsed mem 󰁔 {used}GiB\nAvailable mem 󰁔 {avail}GiB\nTotal swap mem 󰁔 {swapTotal}GiB\nUsed swap mem 󰁔 {swapUsed}GiB\nAvailable swap mem 󰁔 {swapAvail}GiB",
     "format": "{percentage}% ",

@@ -18,7 +18,7 @@ List of applications and tools I use.
 
 | Component              | Program                                |
 |------------------------|----------------------------------------|
-| Distro 🐧              | archlinux                              |
+| Distro 🐧              | Arch                                   |
 | Windows Manager 🪟     | hyprland                               |
 | Terminal 🖥️            | kitty, foot                            |
 | Shell 🐚               | zsh                                    |

@@ -52,7 +52,7 @@ hl.config({
 	-- ━━ ━━┛━━┛━━┛┛ ┛┛ ┛ ┛ ┛━━┛┛ ┛━━┛
 	decoration = {
 		active_opacity = 1,
-		inactive_opacity = 0.94,
+		inactive_opacity = 0.92,
 		fullscreen_opacity = 1,
 		-- rounding = 9,
 		-- rounding_power = 5,
@@ -60,15 +60,15 @@ hl.config({
 		dim_strength = 0.14,
 
 		blur = {
-			enabled = false,
+			enabled = true,
 			ignore_opacity = false, -- Make the blur layer ignore the opacity of the window
 			size = 9,
 			passes = 3,
 			brightness = 0.8172,
 			vibrancy = 0.1696,
 			popups = true,
-			xray = true, -- lighter on gpu as it considers only the wallpaper for reference
-			variant = "acrylic", -- kawase, acrylic, aurora, drops, fluid_jar, frost, haze, heat_shimmer, prism, ripple, water
+			xray = true, -- lighter on gpu as it considers only the wallpaper as reference for floating windows
+			-- variant = "acrylic", -- kawase, acrylic, aurora, drops, fluid_jar, frost, haze, heat_shimmer, prism, ripple, water
 		},
 
 		shadow = {
@@ -81,9 +81,9 @@ hl.config({
 
 		glow = {
 			enabled = false,
-			range = 10,
-			render_power = 4,
-			color = 0xee1a1a1a,
+			range = 20,
+			render_power = 6,
+			color = 0xee72aaff,
 		},
 
 		motion_blur = {

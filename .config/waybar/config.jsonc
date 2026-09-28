@@ -13,9 +13,9 @@
     "custom/fuzzel",
     "custom/dnd",
     "battery",
-    "custom/nightlight",
-    "clock",
     "custom/powerprofile",
+    "clock",
+    "custom/nightlight",
     "custom/spotify"
   ],
   "modules-center": [
