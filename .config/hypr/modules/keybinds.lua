@@ -41,6 +41,27 @@ hl.bind("CTRL+ALT+8", hl.dsp.window.move({ workspace = 8 }))
 hl.bind("CTRL+ALT+9", hl.dsp.window.move({ workspace = 9 }))
 hl.bind("CTRL+ALT+0", hl.dsp.window.move({ workspace = 10 }))
 
+-- Windows movement
+-- 1) cycle tabs
+hl.bind(mainMod .. "+Tab", hl.dsp.window.cycle_next({ next = true }))
+-- 2) Move focus
+hl.bind("ALT+H", hl.dsp.focus({ direction = "left" }))
+hl.bind("ALT+L", hl.dsp.focus({ direction = "right" }))
+hl.bind("ALT+J", hl.dsp.focus({ direction = "down" }))
+hl.bind("ALT+K", hl.dsp.focus({ direction = "up" }))
+hl.bind(mainMod .. "+ALT+U", hl.dsp.focus({ urgent_or_last = true }))
+-- -- 3) Swap active window
+hl.bind(mainMod .. "+ALT+H", hl.dsp.window.swap({ direction = "left" }))
+hl.bind(mainMod .. "+ALT+L", hl.dsp.window.swap({ direction = "right" }))
+hl.bind(mainMod .. "+ALT+J", hl.dsp.window.swap({ direction = "down" }))
+hl.bind(mainMod .. "+ALT+K", hl.dsp.window.swap({ direction = "up" }))
+-- 4) Centre floating window
+hl.bind(mainMod .. "+ALT+C", hl.dsp.window.center())
+
+-- Drag and Resize
+hl.bind(mainMod .. "+mouse:272", hl.dsp.window.drag())
+hl.bind(mainMod .. "+mouse:273", hl.dsp.window.resize())
+
 -- #hypridle
 hl.bind("CTRL+ALT+L", function()
 	hl.exec_cmd("$HOME/.local/bin/scripts/hypridle_kill")
@@ -66,6 +87,30 @@ end)
 hl.bind(mainMod .. "+SHIFT+C", function()
 	hl.exec_cmd("cliphist wipe")
 end)
+
+-- Awww wallpaper switcher
+hl.bind("CTRL+ALT+W", function()
+	hl.exec_cmd("$HOME/.local/bin/scripts/awww_selector")
+end)
+
+-- Hyprpicker
+hl.bind("CTRL+ALT+P", function()
+	hl.exec_cmd("hyprpicker -a")
+end)
+
+-- Zoom
+-- hl.bind(mainMod .. "+Down", function()
+-- 	local value = hl.exec_cmd("hyprctl getoption cursor:zoom_factor -j | jq '.float*1.1'")
+-- 	hl.exec_cmd("hyprctl -q keyword cursor:zoom_factor" .. value)
+-- end)
+-- hl.bind(mainMod .. "+Up", function()
+-- 	hl.exec_cmd(
+-- 		"hyprctl -q keyword cursor:zoom_factor $(hyprctl getoption cursor:zoom_factor -j | jq '(.float*0.9) | if . < 1 then .=1 else . end')"
+-- 	)
+-- end)
+-- hl.bind(mainMod .. "+mouse:274", function()
+-- 	hl.exec_cmd("hyprctl -q keyword cursor:zoom_factor 1")
+-- end)
 
 -- Capslock toggle
 -- hl.bind("Caps_Lock", function()

@@ -37,13 +37,13 @@ hl.config({
 	-- ━━┛━━┛┛ ┛━━┛┛ ┛┛ ┛━━┛
 	general = {
 		border_size = 2,
-		gaps_in = 5,
+		gaps_in = 4,
 		gaps_out = 8,
 		-- gaps_workspaces = 0, -- [0,100] stacks with gaps_out
 		layout = "dwindle", -- Which layout to use. Options: "dwindle"/"master"/"scrolling"/"monocle"
 		col = {
-			active_border = 0xff82aaff,
-			inactive_border = 0xff182323,
+			active_border = "0xff82aaff",
+			inactive_border = "0xff182323",
 		},
 	},
 
@@ -56,11 +56,11 @@ hl.config({
 		fullscreen_opacity = 1,
 		-- rounding = 9,
 		-- rounding_power = 5,
-		dim_inactive = 1,
+		dim_inactive = true,
 		dim_strength = 0.14,
 
 		blur = {
-			enabled = true,
+			enabled = false,
 			ignore_opacity = false, -- Make the blur layer ignore the opacity of the window
 			size = 9,
 			passes = 3,
@@ -124,6 +124,7 @@ hl.config({
 	binds = {
 		-- workspace_back_and_forth = true
 		workspace_center_on = 1, -- Whether switching workspaces should center the cursor on the workspace 0 or on the last active window for that workspace 1
+		drag_threshold = 10, -- Fire a drag event only after dragging for more than 10px
 	},
 
 	--┏━┛┏━┃┏━┃┃ ┃┏━┃┏━┛

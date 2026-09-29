@@ -255,7 +255,7 @@
     "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e btop'"
   },
   "cpu": {
-    "interval": 5,
+    "interval": 3,
     "format": "{usage}% ",
     "format-warning": "<span color='#ffc777'>{usage}% </span>",
     "format-critical": "<span color='#ff8b8b'>{usage}% </span>",

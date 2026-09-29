@@ -8,7 +8,7 @@ text-color=#c0caf5ff
 #border-color=#97e7fd
 border-color=#82aaff
 border-size=2
-#border-radius=6
+border-radius=0
 width=275
 height=200
 

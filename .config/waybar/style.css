@@ -72,122 +72,121 @@ window#waybar {
 tooltip {
   font-weight: 400;
   background-color: @bg;
-  border: 2px solid @blue;
-  border-radius: 0px;
+  border: 1px solid @blue;
+  border-radius: 6px;
   color: @fg;
 }
 
 #custom-fuzzel {
-  border-radius: 0px;
+  border-radius: 6px;
   background-color: @bg;
   color: @blue-arch;
-  border: 1px solid @blue-arch;
-  margin-right: 4px;
+  /* border: 1px solid @blue-arch; */
+  margin-right: 3px;
   margin-left: 5px;
   padding-left: 8px;
   padding-right: 7px;
 }
 
 #battery {
-  border-radius: 0px;
+  border-radius: 6px;
   background-color: @bg;
-  border: 1px solid @fg-dark;
+  /* border: 1px solid @fg-dark; */
   color: @fg-dark;
-  margin-right: 4px;
+  margin-right: 3px;
   padding-right: 8px;
   padding-left: 7px;
 }
 
 #battery.discharging {
   color: @fg;
-  border: 1px solid @fg;
+  /* border: 1px solid @fg; */
 }
 
 #battery.full {
   color: @fg;
-  border: 1px solid @fg;
+  /* border: 1px solid @fg; */
 }
 
 #battery.warning {
   color: #ffac33;
-  border: 1px solid #ffac33;
+  /* border: 1px solid #ffac33; */
 }
 
 #battery.critical {
   color: #ff7770;
-  border: 1px solid #ff7770;
+  /* border: 1px solid #ff7770; */
 }
 
 #battery.charging {
   color: @green-power;
-  border: 1px solid @green-power;
+  /* border: 1px solid @green-power; */
   padding-right: 6px;
 }
 
 #custom-nightlight {
-  border-radius: 0px;
+  border-radius: 6px;
   background-color: @bg;
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 #custom-nightlight.on {
   color: @orange;
-  border: 1px solid @orange;
-  padding-left: 6px;
-  padding-right: 5px;
+  /* border: 1px solid @orange; */
+  padding-left: 7px;
+  padding-right: 6px;
 }
 
 #custom-nightlight.off {
   color: @fg-dark;
-  border: 1px solid @fg-dark;
-  padding-left: 6px;
-  padding-right: 5px;
+  /* border: 1px solid @fg-dark; */
+  padding-left: 7px;
+  padding-right: 6px;
 }
 
 #clock {
   background-color: @bg;
-  border: 1px solid #73daca;
+  /* border: 1px solid #73daca; */
   color: @fg;
-  border-radius: 0px;
-  margin-right: 4px;
-  padding-left: 6px;
-  padding-right: 6px;
+  border-radius: 6px;
+  margin-right: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 #custom-powerprofile {
-  border-radius: 0px;
+  border-radius: 6px;
   background-color: @bg;
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 #custom-powerprofile.performance {
   color: @yellow;
-  border: 1px solid @yellow;
-  padding-right: 8px;
-  padding-left: 8px;
+  /* border: 1px solid @yellow; */
+  padding-right: 9px;
+  padding-left: 9px;
   padding-top: 1px;
 }
 
 #custom-powerprofile.balanced {
-  color: @fg;
-  border: 1px solid @fg;
-  /* color: @aqua-deep; */
-  padding-right: 6px;
-  padding-left: 6px;
+  /* border: 1px solid @fg; */
+  color: @aqua-deep;
+  padding-right: 7px;
+  padding-left: 7px;
 }
 
 #custom-powerprofile.powersaver {
   color: @green;
-  border: 1px solid @green;
+  /* border: 1px solid @green; */
   padding-right: 7px;
   padding-left: 6px;
 }
 
 #custom-spotify {
   background-color: @bg;
-  border: 1px solid @green-mint;
-  border-radius: 0px;
-  margin-right: 0px;
+  /* border: 1px solid @green-mint; */
+  border-radius: 6px;
+  margin-right: 3px;
   color: @green-mint;
 }
 
@@ -210,18 +209,17 @@ tooltip {
 
 #workspaces {
   background-color: @bg;
-  border-radius: 0px;
-  border: 1px solid @teal-light;
-  /*border: 1px solid @orange;*/
+  border-radius: 6px;
+  /* border: 1px solid @teal-light; */
   margin-right: 8px;
-  padding: 0px 0px;
+  padding: 2px 2px;
 }
 
 button {
   color: @fg;
-  border-radius: 0px;
-  margin: 0px 0px;
-  padding: 0px 9px;
+  border-radius: 6px;
+  margin: 0px 1px;
+  padding: 0px 6px;
 }
 
 #workspaces button:not(.empty) {
@@ -232,7 +230,7 @@ button {
   background-color: @blue;
   color: @fg-alt;
   font-weight: 900;
-  /* padding: 0px 13px; */
+  padding: 0px 10px;
 }
 
 #workspaces button.urgent {
@@ -255,15 +253,14 @@ button {
 }
 
 #bluetooth {
-  border-radius: 0px;
-  /*color: #5bd6f7; */
-  color: #1d9bf0;
-  border: 1px solid #00adff;
+  border-radius: 6px;
+  color: #5bd6f7;
+  /* color: #1d9bf0; #00adff */
   background-color: @bg;
-  margin-right: 4px;
-  margin-left: 4px;
-  padding-right: 5px;
-  padding-left: 5px;
+  margin-right: 3px;
+  margin-left: 0px;
+  padding-right: 6px;
+  padding-left: 6px;
 }
 
 #bluetooth.disabled {
@@ -293,33 +290,31 @@ button {
 
 #pulseaudio {
   color: @fg;
-  border-radius: 0px;
-  /* border: 0.5px solid @blue-muted; */
-  border: 1px solid #0eb2dc;
-  margin: 0px 2px 0px 0px;
-  /* margin: 3px 3px; */
-  padding-left: 6px;
-  padding-right: 7px;
+  background-color: #303060;
+  border-radius: 6px;
+  margin: 3px 0px 3px 3px;
+  padding-left: 4px;
+  padding-right: 5px;
 }
 
 #pulseaudio.bluetooth {
-  color: #1d9bf0;
-  font-weight: 700;
+  /* color: #1d9bf0; */
+  color: #5bd6f7;
+  background-color: #2f4998;
+  font-weight: 600;
 }
 
 #pulseaudio.muted {
   color: @fg-dark;
   padding-right: 0px;
-  border: 1px solid @fg-dark;
 }
 
 #custom-mic {
-  border-radius: 0px;
-  /* border: 0.5px solid @blue-muted; */
+  border-radius: 6px;
   color: @fg;
-  border: 1px solid #0eb2dc;
-  margin: 0px 0px 0px 0px;
+  background-color: #303060;
   /* top bottom right left */
+  margin: 3px 3px 3px 2px;
   padding-right: 6px;
   padding-left: 6px;
 }
@@ -327,52 +322,50 @@ button {
 #custom-mic.muted {
   padding-right: 7px;
   padding-left: 7px;
-  border: 1px solid @fg-dark;
   color: @fg-dark;
 }
 
 #audio {
-  border-radius: 0px;
+  border-radius: 6px;
   background-color: @bg;
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 #backlight {
-  border-radius: 0px;
+  border-radius: 6px;
   color: @yellow-soft;
-  border: 1px solid @yellow-soft;
+  /* border: 1px solid @yellow-soft; */
   background-color: @bg;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-right: 3px;
 }
 
 #memory {
-  border-radius: 0px;
+  border-radius: 6px;
   color: @fg;
-  /* border: 0.5px solid @blue-muted; */
-  border: 1px solid #cba6f7;
-  margin: 0px 2px 0px 0px;
+  /* border: 1px solid #cba6f7; */
+  background-color: #303060;
+  margin: 3px 2px 3px 3px;
   padding-right: 8px;
   padding-left: 5px;
 }
 
 #cpu {
-  border-radius: 0px;
+  border-radius: 6px;
   color: @fg;
-  /* border: 0.5px solid @blue-muted; */
-  border: 1px solid #cba6f7;
-  margin: 0px 2px 0px 0px;
+  /* background-color: #3f3f72; */
+  background-color: #303060;
+  margin: 3px 0px 3px 0px;
   padding-right: 7px;
   padding-left: 5px;
 }
 
 #temperature {
-  border-radius: 0px;
-  margin: 0px 0px;
-  /* border: 0.5px solid @blue-muted; */
-  border: 1px solid #cba6f7;
-  /* color: @aqua; */
-  color: @cyan-soft;
+  border-radius: 6px;
+  background-color: #543460;
+  margin: 3px 3px 3px 2px;
+  color: @aqua;
   padding-right: 6px;
   padding-left: 5px;
 }
@@ -386,21 +379,21 @@ button {
 }
 
 #hardware {
-  border-radius: 0px;
+  border-radius: 6px;
   background-color: @bg;
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 #network {
-  border-radius: 0px;
+  border-radius: 6px;
   background-color: @bg;
-  border: 1px solid @fg;
-  margin-right: 4px;
+  /* border: 1px solid @fg; */
+  margin-right: 3px;
 }
 
 #network.ethernet {
   color: @fg;
-  border: 1px solid @fg;
+  /* border: 1px solid @fg; */
   padding-left: 7px;
   padding-right: 8px;
 }
@@ -408,20 +401,20 @@ button {
 #network.wifi {
   color: @fg;
   padding-left: 6px;
-  border: 1px solid @fg;
+  /* border: 1px solid @fg; */
   padding-right: 6px;
 }
 
 #network.disconnected {
   color: @fg-dark;
-  border: 1px solid @fg-dark;
+  /* border: 1px solid @fg-dark; */
   padding-left: 9px;
   padding-right: 8px;
 }
 
 #network.linked {
   color: @fg-dark;
-  border: 1px solid @fg-dark;
+  /* border: 1px solid @fg-dark; */
   padding-left: 8px;
   padding-right: 8px;
   animation: blink 1.5s infinite ease;
@@ -429,16 +422,16 @@ button {
 
 #network.disabled {
   color: @blue-muted;
-  border: 1px solid @blue-muted;
+  /* border: 1px solid @blue-muted; */
   padding-left: 7px;
   padding-right: 4px;
   animation: blink 1.5s infinite ease;
 }
 
 #custom-power {
-  border-radius: 0px;
+  border-radius: 6px;
   color: #89b4fa;
-  border: 1px solid #89b4fa;
+  /* border: 1px solid #89b4fa; */
   background-color: @bg;
   margin-right: 5px;
   padding-right: 7px;
