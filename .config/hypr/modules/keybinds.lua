@@ -7,15 +7,16 @@
 local mainMod = "SUPER" -- sets "Windows" key as main modifier
 
 -- General
-hl.bind(mainMod .. "+ALT+RETURN", hl.dsp.exec_cmd("kitty"))
+hl.bind(mainMod .. "+ALT+RETURN", hl.dsp.exec_cmd("kitty --single-instance"))
+-- hl.bind(mainMod .. "+ALT+RETURN", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. "+RETURN", hl.dsp.exec_cmd("foot"))
 hl.bind(mainMod .. "+F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" })) -- mode can be “maximized” and “fullscreen”
 hl.bind(mainMod .. "+SHIFT+F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" })) -- mode can be “maximized” and “fullscreen”
 hl.bind(mainMod .. "+V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("CTRL+Q", hl.dsp.window.close())
 hl.bind("CTRL+ALT+Q", hl.dsp.window.kill())
-hl.bind(mainMod .. "+L", hl.dsp.exec_cmd("$HOME/.local/bin/scripts/wlogout.sh"))
-hl.bind("ALT+SPACE", hl.dsp.exec_cmd("fuzzel"))
+hl.bind(mainMod .. "+L", hl.dsp.exec_cmd("pkill wlogout || $HOME/.local/bin/scripts/wlogout.sh"))
+hl.bind("ALT+SPACE", hl.dsp.exec_cmd("pkill fuzzel || fuzzel"))
 
 -- Switch workspaces with mainMod
 hl.bind("CTRL+1", hl.dsp.focus({ workspace = 1 }))
@@ -62,6 +63,14 @@ hl.bind(mainMod .. "+ALT+C", hl.dsp.window.center())
 hl.bind(mainMod .. "+mouse:272", hl.dsp.window.drag())
 hl.bind(mainMod .. "+mouse:273", hl.dsp.window.resize())
 
+-- Mako notification daemon
+hl.bind(mainMod .. "+M", function()
+	hl.exec_cmd("makoctl dismiss -a")
+end)
+hl.bind("CTRL+ALT+M", function()
+	hl.exec_cmd("makoctl restore")
+end)
+
 -- #hypridle
 hl.bind("CTRL+ALT+L", function()
 	hl.exec_cmd("$HOME/.local/bin/scripts/hypridle_kill")
@@ -82,7 +91,7 @@ end, { description = "Toggle ScrollOverview with SUPER+g" })
 
 -- cliphist
 hl.bind(mainMod .. "+C", function()
-	hl.exec_cmd("$HOME/.local/bin/scripts/cliphist")
+	hl.exec_cmd("pkill fuzzel || $HOME/.local/bin/scripts/cliphist")
 end)
 hl.bind(mainMod .. "+SHIFT+C", function()
 	hl.exec_cmd("cliphist wipe")
@@ -90,12 +99,12 @@ end)
 
 -- Awww wallpaper switcher
 hl.bind("CTRL+ALT+W", function()
-	hl.exec_cmd("$HOME/.local/bin/scripts/awww_selector")
+	hl.exec_cmd("pkill fuzzel || $HOME/.local/bin/scripts/awww_selector")
 end)
 
 -- Hyprpicker
 hl.bind("CTRL+ALT+P", function()
-	hl.exec_cmd("hyprpicker -a")
+	hl.exec_cmd("pkill hyprpicker || hyprpicker -a")
 end)
 
 -- Zoom
@@ -126,10 +135,10 @@ end)
 hl.bind(mainMod .. "+Delete", function()
 	hl.exec_cmd("$HOME/.local/bin/scripts/performance")
 end)
-hl.bind(mainMod .. "+Prior", function()
+hl.bind(mainMod .. "+ALT+BackSpace", function()
 	hl.exec_cmd("$HOME/.local/bin/scripts/balanced")
 end)
-hl.bind(mainMod .. "+Next", function()
+hl.bind(mainMod .. "+ALT+Delete", function()
 	hl.exec_cmd("$HOME/.local/bin/scripts/power_saving")
 end)
 
@@ -143,40 +152,44 @@ end)
 
 -- hyprsunset
 hl.bind(mainMod .. "+BackSpace", function()
-	hl.exec_cmd("$HOME/.local/bin/scripts/hyprsunset_start")
+	hl.exec_cmd(
+		"pkill hyprsunset && $HOME/.local/bin/scripts/hyprsunset_kill|| $HOME/.local/bin/scripts/hyprsunset_start"
+	)
 end)
-hl.bind(mainMod .. "+ALT+BackSpace", function()
-	hl.exec_cmd("$HOME/.local/bin/scripts/hyprsunset_kill")
-end)
+-- hl.bind(mainMod .. "+ALT+BackSpace", function()
+-- 	hl.exec_cmd("$HOME/.local/bin/scripts/hyprsunset_kill")
+-- end)
 
--- Audio and brightness
+-- Brightness
 hl.bind("XF86MonBrightnessDown", function()
 	hl.exec_cmd("brightnessctl s 5%-")
-end, { repeating = true })
+end, { repeating = true, locked = true })
 hl.bind("XF86MonBrightnessUp", function()
 	hl.exec_cmd("brightnessctl s 5%+")
-end, { repeating = true })
+end, { repeating = true, locked = true })
 hl.bind("F1", function()
 	hl.exec_cmd("brightnessctl s 5%-")
-end, { repeating = true })
+end, { repeating = true, locked = true })
 hl.bind("F2", function()
 	hl.exec_cmd("brightnessctl s 5%+")
-end, { repeating = true })
+end, { repeating = true, locked = true })
+
+-- Audio
 hl.bind("XF86AudioLowerVolume", function()
 	hl.exec_cmd("pactl set-sink-volume @DEFAULT_SINK@ -5%")
-end, { repeating = true })
+end, { repeating = true, locked = true })
 hl.bind("XF86AudioRaiseVolume", function()
 	hl.exec_cmd("$HOME/.local/bin/scripts/max_vol")
-end, { repeating = true })
+end, { repeating = true, locked = true })
 hl.bind("F11", function()
 	hl.exec_cmd("pactl set-sink-volume @DEFAULT_SINK@ -5%")
-end, { repeating = true })
+end, { repeating = true, locked = true })
 hl.bind("F12", function()
 	hl.exec_cmd("$HOME/.local/bin/scripts/max_vol")
-end, { repeating = true })
+end, { repeating = true, locked = true })
 hl.bind("XF86AudioMute", function()
 	hl.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle")
-end)
+end, { locked = true })
 hl.bind("F10", function()
 	hl.exec_cmd("wpctl set-mute @DEFAULT_SINK@ toggle")
-end)
+end, { locked = true })

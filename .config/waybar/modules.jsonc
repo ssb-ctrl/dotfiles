@@ -5,7 +5,7 @@
     "format": "{icon}",
     "format-icons": "",
     "on-click": "fuzzel",
-    "on-click-right": "hyprctl dispatch scrolloverview:overview on"
+    "on-click-middle": "hyprctl dispatch \"hl.plugin.scrolloverview.overview('toggle')\""
   },
   // "custom/dnd": {
   //   "on-click": "~/.local/bin/scripts/dnd",
@@ -44,10 +44,10 @@
       // 	""
     },
     "bat": "BAT1",
-    "interval": 5,
+    "interval": 3,
     "states": {
       "warning": 20,
-      "critical": 5
+      "critical": 10
     },
     "format": "{capacity}% {icon}",
     "tooltip": true,
@@ -75,9 +75,9 @@
     "format-alt": "{:%b %d %Y}",
     "tooltip": true,
     "tooltip-format": "{calendar}",
-    "smooth-scrolling-threshold": 1.0, //scroll on one mouse scroll
+    "smooth-scrolling-threshold": 1, //scroll on one mouse scroll
     "calendar": {
-      "mode": "year",
+      "mode": "month",
       "mode-mon-col": 3,
       "on-scroll": 1,
       "weeks-pos": "right",
@@ -90,7 +90,7 @@
       }
     },
     "actions": {
-      "on-scroll-jp": "shift_up",
+      "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down",
       "on-click-middle": "shift_reset",
       "on-click-right": "mode"
@@ -137,7 +137,8 @@
     },
     "format": "{icon}",
     "sort-by-number": true,
-    "on-click": "activate"
+    "on-click": "activate",
+    // "on-click-1": "hyprctl dispatch \"hl.dsp.focus({ workspace = 1 })\""
   },
   "custom/gsr": {
     "exec": "/home/satya/.local/bin/scripts/gsr_status",
@@ -147,7 +148,7 @@
     "tooltip": true
   },
   "bluetooth": {
-    "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e bluetui'",
+    "on-click": "pgrep -x bluetui > /dev/null || hyprctl dispatch \"hl.dsp.exec_cmd('foot -e bluetui', { workspace = 'current' })\"",
     "format-no-controller": "",
     "format-disabled": "...", //use rfkill to check 
     "format-off": "󰂲", // controller power off
@@ -176,8 +177,8 @@
     "max-volume": 150,
     "format": "{volume}% {icon}",
     "format-muted": "0%  ",
-    "format-bluetooth": "{volume}% 󰂰",
-    "format-bluetooth-muted": "0% 󰂰 ",
+    "format-bluetooth": "{volume}% 󰗾",
+    "format-bluetooth-muted": "0% 󰗿 ",
     "format-icons": {
       "default": [
         "",
@@ -197,11 +198,11 @@
       "car": "",
       "phone": "󰏲",
       // Device specific name 
-      "alsa_output.usb-JieLi_Technology_USB_Audio_2023.06.20-00.analog-stereo": "",
+      "alsa_output.usb-JieLi_Technology_USB_Audio_2023.06.20-00.analog-stereo": ""
     },
     "reverse-scrolling": true,
     "tooltip-format": "{desc}",
-    "on-click": "hyprctl dispatch exec '[workspace current]' 'pavucontrol -t 3'",
+    "on-click": "pgrep -x pavucontrol > /dev/null || hyprctl dispatch \"hl.dsp.exec_cmd('pavucontrol -t 3', { workspace = 'current' })\"",
     "scroll-step": 1
   },
   "custom/mic": {
@@ -210,7 +211,7 @@
     "interval": 1,
     "format": "{}",
     "return-type": "json",
-    "on-click": "hyprctl dispatch exec '[workspace current]' 'pavucontrol -t 4'",
+    "on-click": "pgrep -x pavucontrol > /dev/null || hyprctl dispatch \"hl.dsp.exec_cmd('pavucontrol -t 4', { workspace = 'current' })\"",
     "tooltip": true
   },
   "group/audio": {
@@ -242,7 +243,7 @@
     "tooltip-format": "Brightness level 󰁔 {percent}%"
   },
   "memory": {
-    "interval": 3,
+    "interval": 1,
     "tooltip": true,
     "tooltip-format": "Total mem 󰁔 {total}GiB\nUsed mem 󰁔 {used}GiB\nAvailable mem 󰁔 {avail}GiB\nTotal swap mem 󰁔 {swapTotal}GiB\nUsed swap mem 󰁔 {swapUsed}GiB\nAvailable swap mem 󰁔 {swapAvail}GiB",
     "format": "{percentage}% ",
@@ -252,10 +253,10 @@
       "warning": 70,
       "critical": 85
     },
-    "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e btop'"
+    "on-click": "pgrep -x btop > /dev/null || hyprctl dispatch \"hl.dsp.exec_cmd('foot -e btop', { workspace = 'current' })\""
   },
   "cpu": {
-    "interval": 3,
+    "interval": 2,
     "format": "{usage}% ",
     "format-warning": "<span color='#ffc777'>{usage}% </span>",
     "format-critical": "<span color='#ff8b8b'>{usage}% </span>",
@@ -263,11 +264,11 @@
       "warning": 70,
       "critical": 85
     },
-    "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e nvtop'",
+    "on-click": "pgrep -x nvtop > /dev/null || hyprctl dispatch \"hl.dsp.exec_cmd('foot -e nvtop', { workspace = 'current' })\"",
     "tooltip": true
   },
   "temperature": {
-    "interval": 5,
+    "interval": 3,
     "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
     "input-filename": "temp1_input",
     "warning-threshold": 75,
@@ -296,7 +297,7 @@
     ]
   },
   "network": {
-    "interval": 5,
+    "interval": 2,
     "tooltip": true,
     "family": "ipv4_6",
     "format-icons": [
@@ -317,13 +318,13 @@
     "tooltip-format-disconnected": "wifi disconnected",
     "tooltip-format-disabled": "wifi disabled",
     "tooltip-format-linked": "{ifname} is Up but NO IP assigned",
-    "on-click": "hyprctl dispatch exec '[workspace current]' 'foot -e impala'"
+    "on-click": "pgrep -x impala > /dev/null || hyprctl dispatch \"hl.dsp.exec_cmd('foot -e impala', { workspace = 'current' })\""
   },
   "custom/power": {
     "tooltip": true,
     "tooltip-format": "Exit menu",
     "format-icons": "",
     "format": "{icon}",
-    "on-click": "hyprctl dispatch exec '[workspace current]' 'wlogout -b 2 -s'"
+    "on-click": "hyprctl dispatch \"hl.dsp.exec_cmd('wlogout -b 2 -s', { workspace = 'current' })\""
   }
 }

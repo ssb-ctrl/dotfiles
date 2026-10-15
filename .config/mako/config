@@ -8,7 +8,7 @@ text-color=#c0caf5ff
 #border-color=#97e7fd
 border-color=#82aaff
 border-size=2
-border-radius=0
+border-radius=10
 width=275
 height=200
 
@@ -35,13 +35,13 @@ on-notify=exec mpv /home/$USER/.config/mako/system_sounds/notify8.mp3
 invisible=1
 
 [urgency="low"]
-default-timeout=1250
+default-timeout=1500
 
 [urgency="normal"]
-default-timeout=2500
+default-timeout=3000
 
 [urgency="critical"]
-default-timeout=4500
+default-timeout=5500
 border-color=#ff7972ff
 
 [app-name="powerprofile"]

@@ -17,7 +17,7 @@ hl.config({
 	-- ┃ ┃┃┃┃┃┃ ┃┃ ┃┃  ┏━┛
 	-- ━━ ━━┛┛┛ ┛━━ ━━┛━━┛
 	dwindle = {
-		force_split = 2, --  0 - split follows mouse, 1 - always split to the left (new = left or top), 2 - always split to the right (new = right or bottom)
+		force_split = 0, --  0 - split follows mouse, 1 - always split to the left (new = left or top), 2 - always split to the right (new = right or bottom)
 		preserve_split = false,
 	},
 
@@ -26,9 +26,9 @@ hl.config({
 	-- ━━┛━━┛┛ ┛━━┛━━┛━━┛┛┛ ┛━━┛
 	scrolling = {
 		fullscreen_on_one_column = false,
-		column_width = 0.65,
-		follow_min_visible = 0.2,
-		focus_fit_method = 0,
+		column_width = 0.8,
+		follow_min_visible = 1,
+		focus_fit_method = 2,
 		direction = "right",
 	},
 
@@ -37,10 +37,10 @@ hl.config({
 	-- ━━┛━━┛┛ ┛━━┛┛ ┛┛ ┛━━┛
 	general = {
 		border_size = 2,
-		gaps_in = 4,
-		gaps_out = 8,
+		gaps_in = 6,
+		gaps_out = 10,
 		-- gaps_workspaces = 0, -- [0,100] stacks with gaps_out
-		layout = "dwindle", -- Which layout to use. Options: "dwindle"/"master"/"scrolling"/"monocle"
+		layout = "scrolling", -- Which layout to use. Options: "dwindle"/"master"/"scrolling"/"monocle"
 		col = {
 			active_border = "0xff82aaff",
 			inactive_border = "0xff182323",
@@ -52,12 +52,12 @@ hl.config({
 	-- ━━ ━━┛━━┛━━┛┛ ┛┛ ┛ ┛ ┛━━┛┛ ┛━━┛
 	decoration = {
 		active_opacity = 1,
-		inactive_opacity = 0.92,
+		inactive_opacity = 1,
 		fullscreen_opacity = 1,
-		-- rounding = 9,
-		-- rounding_power = 5,
+		rounding = 12,
+		rounding_power = 8,
 		dim_inactive = true,
-		dim_strength = 0.14,
+		dim_strength = 0.2,
 
 		blur = {
 			enabled = false,
@@ -72,27 +72,28 @@ hl.config({
 		},
 
 		shadow = {
-			enabled = false,
-			range = 10,
-			render_power = 8,
-			color = 0xee1a1a1a,
+			enabled = true,
+			range = 20,
+			render_power = 3,
+			color = "0x55000000",
+			offset = { 0, 1 },
 			scale = 1, -- [0.05,2.0]
 		},
 
 		glow = {
 			enabled = false,
-			range = 20,
-			render_power = 6,
-			color = 0xee72aaff,
+			range = 10,
+			render_power = 2,
+			color = "0xee82aaff",
 		},
 
 		motion_blur = {
 			enabled = false,
-			samples = 8, -- [1-64] More will mean clearer blur, at the cost of more compute
+			samples = 15, -- [1-64] More will mean clearer blur, at the cost of more compute
 		},
 
 		wobble = {
-			enabled = false,
+			enabled = true,
 			mesh = 12,
 			stiffness = 200, -- [0.0001, 1000]
 			mass = 1, -- [0.0001, 1000]
@@ -124,7 +125,7 @@ hl.config({
 	binds = {
 		-- workspace_back_and_forth = true
 		workspace_center_on = 1, -- Whether switching workspaces should center the cursor on the workspace 0 or on the last active window for that workspace 1
-		drag_threshold = 10, -- Fire a drag event only after dragging for more than 10px
+		drag_threshold = 8, -- Fire a drag event only after dragging for more than 10px
 	},
 
 	--┏━┛┏━┃┏━┃┃ ┃┏━┃┏━┛

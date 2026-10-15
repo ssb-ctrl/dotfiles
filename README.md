@@ -1,4 +1,4 @@
-<h1 align="center">"✨ Elegant Hyprland rice, inspired by the Tokyonight color pallete 🌌"</h1>
+<h1 align="center">"✨ Beautiful Hyprland rice, inspired by the Tokyonight-Moon and Catppuccin-Mocha Theme flavours 🌌"</h1>
 
 🎥 Click the banner below to watch the complete desktop showcase.
 
@@ -45,6 +45,10 @@ List of applications and tools I use.
 | Clipboard Manager 📋   | cliphist                               |
 | GTK Theme Manager 🎨   | nwg-look                               |
 | QT Theme Manager 🎨    | kvantum                                |
+| Global font ✒️         | caskaydiacove nerd font                |
+| Global Theme 🎨        | tokyonight moon                        |
+| Icons Theme 🎨         | kora + neuwaita                        |
+| Cursor Theme 🎨        | bibata-modern-ice                      |
 
 ## 📸 More Screenshots
 

@@ -16,7 +16,7 @@
 
 @keyframes spotify-glow {
   0% {
-    color: @green-spotify;
+    background-color: @green-spotify;
     text-shadow:
       0 0 17px rgba(29, 185, 84, 0.5),
       0 0 24px rgba(29, 185, 84, 0.3),
@@ -24,7 +24,7 @@
   }
 
   25% {
-    color: @green-mint-alt;
+    background-color: @green-mint-alt;
     text-shadow:
       0 0 12px rgba(29, 185, 84, 0.9),
       0 0 24px rgba(29, 185, 84, 0.6),
@@ -33,7 +33,7 @@
   }
 
   50% {
-    color: @yellow;
+    background-color: @yellow;
     text-shadow:
       0 0 12px rgba(29, 185, 84, 0.9),
       0 0 24px rgba(29, 185, 84, 0.6),
@@ -42,7 +42,7 @@
   }
 
   75% {
-    color: @pink;
+    background-color: #5bd6f7;
     text-shadow:
       0 0 12px rgba(29, 185, 84, 0.9),
       0 0 24px rgba(29, 185, 84, 0.6),
@@ -51,7 +51,7 @@
   }
 
   100% {
-    color: @green-mint;
+    background-color: @green-mint;
     text-shadow:
       0 0 8px rgba(29, 185, 84, 0.6),
       0 0 16px rgba(29, 185, 84, 0.4),
@@ -134,19 +134,18 @@ tooltip {
   color: @orange;
   /* border: 1px solid @orange; */
   padding-left: 7px;
-  padding-right: 6px;
+  padding-right: 7px;
 }
 
 #custom-nightlight.off {
   color: @fg-dark;
   /* border: 1px solid @fg-dark; */
   padding-left: 7px;
-  padding-right: 6px;
+  padding-right: 7px;
 }
 
 #clock {
   background-color: @bg;
-  /* border: 1px solid #73daca; */
   color: @fg;
   border-radius: 6px;
   margin-right: 3px;
@@ -162,17 +161,17 @@ tooltip {
 
 #custom-powerprofile.performance {
   color: @yellow;
-  /* border: 1px solid @yellow; */
   padding-right: 9px;
   padding-left: 9px;
-  padding-top: 1px;
+  font-size: 14.67px;
+  padding-top: 2px;
 }
 
 #custom-powerprofile.balanced {
-  /* border: 1px solid @fg; */
-  color: @aqua-deep;
+  color: @fg;
   padding-right: 7px;
   padding-left: 7px;
+  font-size: 11px;
 }
 
 #custom-powerprofile.powersaver {
@@ -212,7 +211,7 @@ tooltip {
   border-radius: 6px;
   /* border: 1px solid @teal-light; */
   margin-right: 8px;
-  padding: 2px 2px;
+  padding: 2px 1px;
 }
 
 button {
@@ -298,14 +297,14 @@ button {
 }
 
 #pulseaudio.bluetooth {
-  /* color: #1d9bf0; */
-  color: #5bd6f7;
-  background-color: #2f4998;
+  /* background-color: #1d9bf0; */
+  background-color: #5bd6f7;
+  color: #000000;
   font-weight: 600;
 }
 
 #pulseaudio.muted {
-  color: @fg-dark;
+  color: #000000;
   padding-right: 0px;
 }
 

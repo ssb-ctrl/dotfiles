@@ -3,12 +3,12 @@
 PROFILE=$(powerprofilesctl get)
 
 if [[ "$PROFILE" == "performance" ]]; then
-    echo "{\"text\":\"󰉁\", \"tooltip\":\"Power profile 󰁔 Performance\", \"class\":\"performance\"}"
-    # echo "{\"text\":\"󰓅\", \"tooltip\":\"Power profile 󰁔 Performance\", \"class\":\"performance\"}"
+  echo "{\"text\":\"󰉁\", \"tooltip\":\"Power profile 󰁔 Performance\", \"class\":\"performance\"}"
+  # echo "{\"text\":\"󰓅\", \"tooltip\":\"Power profile 󰁔 Performance\", \"class\":\"performance\"}"
 
 elif [[ "$PROFILE" == "balanced" ]]; then
-    echo '{"text":"󰗑", "tooltip":"Power profile 󰁔 Balanced", "class":"balanced"}'
+  echo '{"text":"", "tooltip":"Power profile 󰁔 Balanced", "class":"balanced"}'
 
 else
-    echo '{"text":"", "tooltip":"Power profile 󰁔 Powersaver", "class":"powersaver"}'
+  echo '{"text":"", "tooltip":"Power profile 󰁔 Powersaver", "class":"powersaver"}'
 fi
