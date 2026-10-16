@@ -92,15 +92,15 @@ hl.config({
 			samples = 15, -- [1-64] More will mean clearer blur, at the cost of more compute
 		},
 
-		wobble = {
-			enabled = true,
-			mesh = 12,
-			stiffness = 200, -- [0.0001, 1000]
-			mass = 1, -- [0.0001, 1000]
-			intensity = 0.4, -- [0,3]
-			value_epsilon = 0.25, -- [0,100]
-			velocity_epsilon = 2, -- [0,1000]
-		},
+		-- wobble = {
+		-- 	enabled = false,
+		-- 	mesh = 12,
+		-- 	stiffness = 200, -- [0.0001, 1000]
+		-- 	mass = 1, -- [0.0001, 1000]
+		-- 	intensity = 0.4, -- [0,3]
+		-- 	value_epsilon = 0.25, -- [0,100]
+		-- 	velocity_epsilon = 2, -- [0,1000]
+		-- },
 	},
 
 	-- ┏━┛┏━┛┏━┛━┏┛┃ ┃┏━┃┏━┛┏━┛
@@ -150,7 +150,7 @@ hl.config({
 	debug = {
 		error_limit = 5,
 		error_position = 0, -- 0 - top, 1 bottom
-		suppress_errors = true,
+		suppress_errors = false,
 	},
 	--┏━┃ ┃ ┃┛┏━┃┃ ┃┏━┛
 	--┃ ┃ ┃ ┃┃┏┏┛┏┛ ━━┃

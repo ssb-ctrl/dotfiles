@@ -62,13 +62,15 @@ source = auto
 
 [output]
 
-# Output method. Can be 'ncurses', 'noncurses', 'raw', 'noritake', 'sdl'
-# or 'sdl_glsl'.
+# Output method. Can be 'ncurses', 'noncurses', 'raw', 'noritake', 'sdl' or 'sdl_glsl'.
 method = noncurses
+# method = sdl_glsl
 orientation = bottom
 channels = stereo
 mono_option = average
 reverse = 0
+vertex_shader = pass_through.vert
+fragment_shader = orion_circle_rotate.frag
 
 # Raw output target.
 # On Linux, a fifo will be created if target does not exist.
@@ -93,8 +95,6 @@ bar_delimiter = 0
 # defaults to off since the behaviour in other terminal emulators is unknown
 synchronized_sync = 1
 # Shaders for sdl_glsl, located in $HOME/.config/cava/shaders
-; vertex_shader = pass_through.vert
-; fragment_shader = bar_spectrum.frag
 show_idle_bar_heads = 1
 
 [color]

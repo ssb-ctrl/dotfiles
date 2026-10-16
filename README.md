@@ -1,4 +1,4 @@
-<h1 align="center">"✨ Beautiful Hyprland rice, inspired by the Tokyonight-Moon and Catppuccin-Mocha Theme flavours 🌌"</h1>
+<h1 align="center">"✨ Beautiful Hyprland rice, inspired by the Tokyonight-Moon and Catppuccin-Mocha flavours 🌌"</h1>
 
 🎥 Click the banner below to watch the complete desktop showcase.
 
@@ -6,10 +6,6 @@
   <a href="https://youtu.be/lv8aSjdJ6ZE">
     <img src="./Preview/banner.png" alt="Desktop Showcase" width="1000">
   </a>
-</p>
-
-<p align="center">
-Disclaimer: This was all done on my old Lenevo yoga slim 7i btw !
 </p>
 
 ## 📦 Software packages

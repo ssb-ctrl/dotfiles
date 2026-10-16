@@ -307,8 +307,9 @@
       "󰤥",
       "󰤨"
     ],
+    // 󰀂
     "format-wifi": "{bandwidthDownBytes} {icon}",
-    "format-ethernet": "{bandwidthDownBytes} 󰈀",
+    "format-ethernet": "{bandwidthDownBytes} ",
     "format-disconnected": "󰤮 ?",
     // "format-disabled": "󰯡 ...",
     "format-disabled": "󰀝...",

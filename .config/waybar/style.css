@@ -16,7 +16,7 @@
 
 @keyframes spotify-glow {
   0% {
-    background-color: @green-spotify;
+    color: @green-spotify;
     text-shadow:
       0 0 17px rgba(29, 185, 84, 0.5),
       0 0 24px rgba(29, 185, 84, 0.3),
@@ -24,7 +24,7 @@
   }
 
   25% {
-    background-color: @green-mint-alt;
+    color: @green-mint-alt;
     text-shadow:
       0 0 12px rgba(29, 185, 84, 0.9),
       0 0 24px rgba(29, 185, 84, 0.6),
@@ -33,7 +33,7 @@
   }
 
   50% {
-    background-color: @yellow;
+    color: @yellow;
     text-shadow:
       0 0 12px rgba(29, 185, 84, 0.9),
       0 0 24px rgba(29, 185, 84, 0.6),
@@ -42,7 +42,7 @@
   }
 
   75% {
-    background-color: #5bd6f7;
+    color: #5bd6f7;
     text-shadow:
       0 0 12px rgba(29, 185, 84, 0.9),
       0 0 24px rgba(29, 185, 84, 0.6),
@@ -51,7 +51,7 @@
   }
 
   100% {
-    background-color: @green-mint;
+    color: @green-mint;
     text-shadow:
       0 0 8px rgba(29, 185, 84, 0.6),
       0 0 16px rgba(29, 185, 84, 0.4),
@@ -81,6 +81,7 @@ tooltip {
   border-radius: 6px;
   background-color: @bg;
   color: @blue-arch;
+  font-size: 14px;
   /* border: 1px solid @blue-arch; */
   margin-right: 3px;
   margin-left: 5px;
